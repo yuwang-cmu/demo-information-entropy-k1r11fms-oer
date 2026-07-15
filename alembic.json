@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 2,
+  "packageId": "pkg-demo-information-entropy-k1r11fms",
+  "title": "(Demo) Information Entropy",
+  "description": "",
+  "keywords": [],
+  "discipline": "chemistry",
+  "courseContext": {},
+  "license": "CC-BY-SA-4.0",
+  "unitTerm": "module",
+  "createdAt": "2026-07-15T00:26:10.942Z",
+  "publicRepo": {
+    "owner": "yuwang-cmu",
+    "name": "demo-information-entropy-k1r11fms-oer"
+  },
+  "privateRepo": {
+    "owner": "yuwang-cmu",
+    "name": "demo-information-entropy-k1r11fms-private"
+  }
+}
