@@ -1,0 +1,798 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>(Demo) Information Entropy</title>
+<meta name="generator" content="Alembic (orz-markdown@1.6.0)">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.35/dist/katex.min.css">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap');
+:root{
+  --canvas:#fbfbfd;--surface:#ffffff;--elevated:#f3f4f8;
+  --edge:#dee1ea;--edge-soft:#eaecf2;--ink:#1b2030;--muted:#5a6276;
+  --accent:#a4551e;--accent-hover:#8a4a1c;--accent-ink:#ffffff;
+  --accent-soft:rgba(164,85,30,.10);
+  color-scheme:light;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--canvas);color:var(--ink);
+  font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  line-height:1.65;padding:clamp(1.5rem,5vw,3.5rem) 1rem;
+}
+.markdown-body{
+  max-width:52rem;margin:0 auto;background:var(--surface);
+  border:1px solid var(--edge);border-radius:1rem;
+  padding:clamp(1.75rem,6vw,3.25rem);
+}
+h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;color:var(--ink);
+  line-height:1.2;text-wrap:balance;margin:0 0 .5em}
+h1{font-size:clamp(1.9rem,4.5vw,2.75rem);letter-spacing:-.01em;
+  overflow-wrap:break-word;word-break:break-word;hyphens:auto}
+h2{font-size:clamp(1.3rem,3vw,1.6rem);letter-spacing:-.005em}
+p{margin:0 0 1em}
+p:last-child{margin-bottom:0}
+a{color:var(--accent);text-decoration:none}
+a:hover{color:var(--accent-hover);text-decoration:underline}
+strong,b{color:var(--ink);font-weight:600}
+em,i{font-style:italic}
+ul,ol{margin:0 0 1em;padding-left:1.4em}
+li{margin-bottom:.3em}
+blockquote{margin:1em 0;padding:.6em 1em;border-left:3px solid var(--accent-soft);
+  background:var(--elevated);color:var(--muted);font-style:italic}
+code{font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:.9em;
+  background:var(--elevated);border:1px solid var(--edge-soft);border-radius:.3em;
+  padding:.1em .4em}
+hr{border:none;border-top:1px solid var(--edge);margin:1.5em 0}
+
+.course-hero{margin-bottom:clamp(2rem,5vw,3.5rem)}
+@media (max-width:480px){ .course-hero h1{font-size:1.6rem} }
+.course-meta{margin:.4rem 0 0;font-size:.95rem;color:var(--muted);
+  letter-spacing:.01em;text-align:left;hyphens:none}
+.course-meta .sep{margin:0 .55em;opacity:.6}
+.course-intro{margin-top:1.35rem;color:var(--ink);opacity:.92}
+.course-intro .intro-body{
+  position:relative;max-height:8.5em;overflow:hidden;
+}
+.course-intro .intro-body::after{
+  content:"";position:absolute;left:0;right:0;bottom:0;height:2.4em;
+  background:linear-gradient(to bottom, transparent, var(--surface));
+  pointer-events:none;
+}
+.course-intro .intro-body.expanded{
+  max-height:none;overflow:visible;
+}
+.course-intro .intro-body.expanded::after{display:none}
+.intro-toggle{
+  margin-top:.6rem;padding:0;border:none;background:none;
+  font:inherit;font-size:.85rem;font-weight:600;color:var(--accent);
+  cursor:pointer;
+}
+.intro-toggle:hover{color:var(--accent-hover);text-decoration:underline}
+
+.modules{margin:clamp(2.5rem,6vw,4rem) 0;text-align:left}
+.modules-head{display:flex;align-items:baseline;justify-content:space-between;
+  gap:1rem .75rem;flex-wrap:wrap}
+.modules-count{font-size:.8rem;color:var(--muted)}
+.module-list{list-style:none;padding:0;margin:1.1rem 0 0}
+.module-row{display:flex;gap:clamp(1rem,3vw,1.75rem);align-items:baseline;
+  padding:1.15rem 0;border-bottom:1px solid var(--edge-soft)}
+.module-row:first-child{border-top:1px solid var(--edge-soft)}
+.module-num{flex:0 0 auto;min-width:1.7em;font-variant-numeric:tabular-nums;
+  font-size:.95rem;font-weight:600;color:var(--accent)}
+.module-main{flex:1;min-width:0;display:flex;flex-wrap:wrap;align-items:baseline;
+  justify-content:space-between;gap:.4rem 1.5rem}
+a.module-title{font-weight:600;font-size:1.05rem;color:var(--ink);text-decoration:none}
+a.module-title:hover{color:var(--accent)}
+.module-formats{display:flex;gap:1.1rem;flex-wrap:wrap;font-size:.82rem}
+.module-formats a{text-decoration:none;color:var(--muted)}
+.module-formats a:hover{color:var(--accent)}
+.modules-empty{color:var(--muted);font-style:italic}
+
+.current-term{margin:clamp(2.5rem,6vw,4rem) 0;padding:clamp(1.35rem,4vw,1.85rem);
+  border:1px solid var(--edge);border-radius:.9rem;background:var(--elevated);
+  text-align:left}
+.current-term h2{margin-top:0;display:flex;align-items:baseline;
+  flex-wrap:wrap;gap:.5rem .6rem}
+.term-label{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  font-size:.72rem;font-weight:600;letter-spacing:.02em;
+  color:var(--accent);background:var(--accent-soft);
+  border-radius:999px;padding:.15em .7em;line-height:1.4}
+.term-empty{color:var(--muted);margin:0}
+.term-syllabus{margin:0 0 1.2rem}
+.term-syllabus a{color:var(--accent);font-weight:600}
+.term-syllabus a:hover{color:var(--accent-hover)}
+.term-announcements{list-style:none;padding:0;margin:0}
+.term-announcement{padding:1rem 0;border-top:1px solid var(--edge-soft)}
+.term-announcement:first-child{padding-top:.25rem;border-top:none}
+.term-ann-head{display:flex;align-items:baseline;justify-content:space-between;
+  flex-wrap:wrap;gap:.2rem .9rem}
+.term-ann-title{font-size:1.02rem;margin:0}
+.term-ann-date{flex:none;font-size:.8rem;color:var(--muted);
+  font-variant-numeric:tabular-nums}
+.term-ann-body{margin-top:.35rem}
+.term-ann-body>:first-child{margin-top:0}
+.term-ann-body>:last-child{margin-bottom:0}
+.term-links{margin-top:1.4rem}
+.term-links:first-child{margin-top:0}
+.term-links-heading{font-family:'Source Serif 4',Georgia,serif;font-size:1rem;
+  font-weight:600;color:var(--ink);margin:0 0 .5rem}
+.term-link-list{list-style:none;padding:0;margin:0;
+  display:flex;flex-direction:column;gap:.35rem}
+.term-link-list a{color:var(--accent)}
+.term-link-list a:hover{color:var(--accent-hover)}
+
+.site-footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--edge-soft);
+  display:flex;flex-wrap:wrap;align-items:center;gap:.5rem;
+  font-size:.8rem;color:var(--muted);text-align:left}
+.orz-mark{width:1.6em;height:.89em;flex:none}
+.site-footer .sep{margin:0 .1em;opacity:.6}
+.site-footer a{color:var(--muted)}
+.site-footer a:hover{color:var(--accent)}
+/* The rights notice takes a full row of its own above the credits (the footer
+   is a flex row), so the terms never read as a footnote to "Published with
+   Alembic". Underlined because it is the one link a reader may need to act on. */
+.site-license{flex:1 0 100%;margin:0 0 .4rem}
+.site-license a{text-decoration:underline;text-underline-offset:2px}
+
+@media (max-width:640px){
+  .module-row{flex-direction:column;gap:.4rem}
+  .module-num{min-width:0}
+}
+
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LearningResource",
+  "name": "(Demo) Information Entropy",
+  "learningResourceType": "course",
+  "inLanguage": "en",
+  "isAccessibleForFree": true,
+  "creativeWorkStatus": "Published",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "description": "This is a demonstration course that shows what Coursewerk can produce; it is not a course package intended for direct use in real teaching. This two-chapter introductory information-science demo begins by turning uncertainty into a measurable quantity: bits, entropy, conditional entropy, mutual information, noisy channels, and capacity. It then asks how real messages survive corruption, using redundancy, Hamming distance, parity checks, block codes, interleaving, and layered validation to explain error detection and correction without implying perfect reliability. Each chapter includes a concept map, accessible study guide, visual slide deck, assessment-design guide, and worked practice set. The package is generated automatically by an AI agent following Coursewerk from revision-pinned Wikipedia pages and retained rights evidence, without human-authored lesson content or subject-matter editing; human involvement is limited to commissioning, pipeline audit, visual review, and publication oversight.",
+  "about": "Information science, mathematics, and communications",
+  "educationalLevel": "introductory undergraduate",
+  "url": "https://yuwang-cmu.github.io/demo-information-entropy-k1r11fms-oer/",
+  "keywords": [
+    "information theory",
+    "entropy",
+    "mutual information",
+    "channel capacity",
+    "noise",
+    "error correction",
+    "Hamming distance",
+    "coding theory"
+  ]
+}
+</script>
+</head>
+<body>
+<div class="markdown-body">
+<svg style="position:absolute;width:0;height:0" aria-hidden="true"><symbol id="orz-icon" viewBox="-5 -5 180 100">
+<defs>
+<filter id="rough-edges" x="-10%" y="-10%" width="120%" height="120%">
+<feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" result="noise" />
+<feDisplacementMap in="SourceGraphic" in2="noise" scale="2.5" xChannelSelector="R" yChannelSelector="G" />
+</filter>
+<path d="M 20,23 C 33,16 57,17 84,13 C 111,8 137,4 153,6 C 165,7 170,13 169,25 L 167,66 C 166,79 159,87 146,89 C 121,93 92,92 60,91 C 41,90 27,92 16,89 C 6,86 1,79 1,67 L 1,50 C 1,35 7,25 20,23 Z" id="seal-shape" />
+<filter id="stone-texture" x="-10%" y="-10%" width="120%" height="120%">
+<feTurbulence type="fractalNoise" baseFrequency="0.95" numOctaves="2" seed="11" result="noise" />
+<feColorMatrix in="noise" type="saturate" values="0" result="mono" />
+<feComponentTransfer in="mono" result="grain"><feFuncA type="table" tableValues="0 0.16" /></feComponentTransfer>
+</filter>
+<mask id="text-cutout-ancient">
+<use href="#seal-shape" fill="white" id="rect1" />
+<path d="M37.81 80.31Q30.44 80.31 24.50 77Q18.56 73.69 15.25 67.75Q11.94 61.81 11.94 54.19L11.94 54.19Q11.94 41.69 21.13 35.56Q30.31 29.44 43.69 29.44L43.69 29.44Q49.81 29.44 55.13 32.44Q60.44 35.44 63.69 41.06Q66.94 46.69 66.94 54.06L66.94 54.06Q66.94 62.06 62.81 68Q58.69 73.94 52 77.13Q45.31 80.31 37.81 80.31L37.81 80.31ZM36.44 73.19Q48.06 73.19 54.06 67.94Q60.06 62.69 60.06 52.56L60.06 52.56Q60.06 45.69 55.38 40.69Q50.69 35.69 42.31 35.69L42.31 35.69Q36.69 35.69 30.94 37.81Q25.19 39.94 21.44 44.19Q17.69 48.44 17.69 54.44L17.69 54.44Q17.69 59.44 20.19 63.75Q22.69 68.06 27 70.63Q31.31 73.19 36.44 73.19L36.44 73.19ZM87.94 80.19Q82.81 70.19 79.88 56.69Q76.94 43.19 76.94 33.31L76.94 33.31Q76.94 29.44 78.69 28.31L78.69 28.31Q79.69 27.69 80.19 27.69L80.19 27.69Q81.06 27.69 81.50 29.06Q81.94 30.44 82.44 34.06L82.44 34.06L83.06 38.56Q84.44 31.81 88.38 27.88Q92.31 23.94 98.06 23.94L98.06 23.94Q104.44 23.94 107.56 26.38Q110.69 28.81 110.69 34.44L110.69 34.44Q104.44 31.44 99.31 31.44L99.31 31.44Q94.44 31.44 90.94 34.06Q87.44 36.69 86.06 41.81L86.06 41.81Q84.94 45.31 84.94 48.44L84.94 48.44Q84.94 51.81 85.88 54.75Q86.81 57.69 88.81 61.94L88.81 61.94Q90.69 66.31 91.75 69.44Q92.81 72.56 92.94 76.19L92.94 76.19Q92.94 78.31 91.44 79.25Q89.94 80.19 87.94 80.19L87.94 80.19ZM160.56 66.19Q163.06 68.06 163.06 70.19L163.06 70.19Q163.06 73.56 157.31 75.81Q151.56 78.06 144.31 79.13Q137.06 80.19 132.81 80.19L132.81 80.19Q128.06 80.19 123.75 78.63Q119.44 77.06 119.44 73.19L119.44 73.19Q119.44 69.44 123.63 63.44Q127.81 57.44 133.69 51.19L133.69 51.19L117.56 51.19Q116.31 51.19 116.31 48.94L116.31 48.94Q116.31 47.19 116.69 46.50Q117.06 45.81 117.69 45.69Q118.31 45.56 120.06 45.56L120.06 45.56L139.31 45.56Q143.94 39.69 146.38 35.50Q148.81 31.31 148.81 27.69L148.81 27.69Q148.81 24.06 146.31 21.19L146.31 21.19Q142.44 20.44 138.81 20.44L138.81 20.44Q131.94 20.44 127.19 22.75Q122.44 25.06 121.94 28.81L121.94 28.81Q119.06 28.81 118.13 27.81Q117.19 26.81 117.19 24.44L117.19 24.44Q117.19 21.94 119.75 19.63Q122.31 17.31 126.94 15.88Q131.56 14.44 137.31 14.44L137.31 14.44Q142.06 14.44 147.31 15.56L147.31 15.56Q150.56 16.19 152.81 19.69Q155.06 23.19 155.06 27.44L155.06 27.44Q155.06 31.19 152.75 35.31Q150.44 39.44 145.94 45.56L145.94 45.56L152.06 45.56Q156.81 45.56 158.38 46.06Q159.94 46.56 159.94 48.06L159.94 48.06Q159.94 49.31 159.13 50.19Q158.31 51.06 157.44 51.06L157.44 51.06L140.19 51.06Q134.06 57.94 130.81 63.25Q127.56 68.56 128.19 70.81L128.19 70.81Q128.69 73.19 135.94 74.06L135.94 74.06Q144.06 74.06 149.69 72.13Q155.31 70.19 160.56 66.19L160.56 66.19Z" fill="black" stroke="black" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" id="text2" />
+</mask>
+</defs>
+<g filter="url(#rough-edges)">
+<use href="#seal-shape" fill="#96d969" mask="url(#text-cutout-ancient)" id="rect2" />
+<use href="#seal-shape" fill="#6ea84d" opacity="0.28" filter="url(#stone-texture)" mask="url(#text-cutout-ancient)" id="stone-grain" />
+<use href="#seal-shape" fill="none" stroke="#c8f7a5" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.42" mask="url(#text-cutout-ancient)" id="seal-highlight" />
+<use href="#seal-shape" fill="none" stroke="#5f8f44" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.35" mask="url(#text-cutout-ancient)" id="seal-shadow" />
+</g>
+</symbol></svg>
+<header class="course-hero">
+<h1>(Demo) Information Entropy</h1>
+<p class="course-meta">Yu Wang (demo curator)<span class="sep">·</span>Unassigned<span class="sep">·</span>Interdisciplinary STEM</p>
+<div class="course-intro"><div class="intro-body" id="intro-body"><p>This is a demonstration course that shows what Coursewerk can produce; it is not a course package intended for direct use in real teaching. This two-chapter introductory information-science demo begins by turning uncertainty into a measurable quantity: bits, entropy, conditional entropy, mutual information, noisy channels, and capacity. It then asks how real messages survive corruption, using redundancy, Hamming distance, parity checks, block codes, interleaving, and layered validation to explain error detection and correction without implying perfect reliability. Each chapter includes a concept map, accessible study guide, visual slide deck, assessment-design guide, and worked practice set. The package is generated automatically by an AI agent following Coursewerk from revision-pinned Wikipedia pages and retained rights evidence, without human-authored lesson content or subject-matter editing; human involvement is limited to commissioning, pipeline audit, visual review, and publication oversight.</p></div><button type="button" class="intro-toggle" id="intro-toggle" hidden aria-expanded="false" aria-controls="intro-body">Show full description</button></div>
+<script>(function(){var b=document.getElementById('intro-body'),t=document.getElementById('intro-toggle');if(!b||!t)return;function chk(){if(b.scrollHeight>b.clientHeight+2){t.hidden=false;t.addEventListener('click',function(){var ex=b.classList.toggle('expanded');t.textContent=ex?'Show less':'Show full description';t.setAttribute('aria-expanded',String(ex));});}}function ready(){requestAnimationFrame(chk);}if(document.readyState==='complete')ready();else window.addEventListener('load',ready);})();</script>
+</header>
+<section class="modules" aria-labelledby="modules-heading">
+<div class="modules-head">
+<h2 id="modules-heading">Modules</h2>
+<span class="modules-count">2 modules</span>
+</div>
+<ol class="module-list">
+<li class="module-row">
+<span class="module-num" aria-hidden="true">01</span>
+<div class="module-main">
+<a class="module-title" href="chapters/measuring-information.md.html">Measuring Information: Surprise, Entropy, and Channel Capacity</a>
+<span class="module-formats"><a href="slides/measuring-information.slides.html">Slides</a><a href="practice/measuring-information.md.html">Practice questions</a></span>
+</div>
+</li>
+<li class="module-row">
+<span class="module-num" aria-hidden="true">02</span>
+<div class="module-main">
+<a class="module-title" href="chapters/reliable-codes.md.html">Reliable Codes: Redundancy, Distance, and Error Correction</a>
+<span class="module-formats"><a href="slides/reliable-codes.slides.html">Slides</a><a href="practice/reliable-codes.md.html">Practice questions</a></span>
+</div>
+</li>
+</ol>
+</section>
+
+<footer class="site-footer">
+<p class="site-license">© 2026 Yu Wang (demo curator) <span class="sep">·</span> Licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license noreferrer" target="_blank">CC BY-SA 4.0</a></p>
+<svg class="orz-mark" aria-hidden="true"><use href="#orz-icon"/></svg>
+<a href="https://alembic.orz.how" target="_blank" rel="noreferrer">Published with Alembic</a>
+<span class="sep">·</span>
+<a href="https://markdown.orz.how" target="_blank" rel="noreferrer">Powered by orz-markdown</a>
+</footer>
+</div>
+<script>
+(function (global) {
+  var expandedQr = null;
+  var expandedSourceQr = null;
+
+  function collapseQr() {
+    if (!expandedQr) return;
+
+    if (expandedSourceQr) {
+      expandedSourceQr.classList.remove('is-expanded');
+      expandedSourceQr.setAttribute('aria-expanded', 'false');
+    }
+
+    if (expandedQr.parentNode) {
+      expandedQr.parentNode.removeChild(expandedQr);
+    }
+
+    if (global.document && global.document.body) {
+      global.document.body.style.overflow = '';
+    }
+    expandedQr = null;
+    expandedSourceQr = null;
+  }
+
+  function toggleQr(node) {
+    if (expandedSourceQr === node) {
+      collapseQr();
+      return;
+    }
+
+    collapseQr();
+    if (!global.document || !global.document.body) {
+      return;
+    }
+
+    expandedSourceQr = node;
+    expandedSourceQr.classList.add('is-expanded');
+    expandedSourceQr.setAttribute('aria-expanded', 'true');
+
+    expandedQr = node.cloneNode(true);
+    expandedQr.classList.add('qrcode-overlay', 'is-expanded');
+    expandedQr.setAttribute('aria-hidden', 'true');
+    expandedQr.removeAttribute('aria-expanded');
+    expandedQr.removeAttribute('tabindex');
+    expandedQr.removeAttribute('role');
+    expandedQr.addEventListener('click', function (event) {
+      event.stopPropagation();
+      collapseQr();
+    });
+
+    global.document.body.appendChild(expandedQr);
+
+    if (global.document && global.document.body) {
+      global.document.body.style.overflow = 'hidden';
+    }
+  }
+
+  function initQrCodes(root) {
+    if (!root || typeof root.querySelectorAll !== 'function') return;
+
+    Array.prototype.slice.call(root.querySelectorAll('.qrcode')).forEach(function (node) {
+      if (node.getAttribute('data-qr-ready') === '1') return;
+
+      node.setAttribute('data-qr-ready', '1');
+      node.addEventListener('click', function (event) {
+        event.stopPropagation();
+        toggleQr(node);
+      });
+      node.addEventListener('keydown', function (event) {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          toggleQr(node);
+        }
+        if (event.key === 'Escape') {
+          collapseQr();
+        }
+      });
+    });
+  }
+
+  function initTabs(root) {
+    if (!root || typeof root.querySelectorAll !== 'function') return;
+    Array.prototype.slice.call(root.querySelectorAll('.tabs')).forEach(function (tabs) {
+      // data-js both guards re-init and switches the theme CSS from the no-JS
+      // fallback (all panels shown) to JS mode (only the .active panel shown).
+      if (tabs.getAttribute('data-js') === '1') return;
+      var panels = Array.prototype.slice.call(tabs.querySelectorAll(':scope > .tab'));
+      if (!panels.length) return;
+      tabs.setAttribute('data-js', '1');
+
+      var bar = global.document.createElement('div');
+      bar.className = 'tabs-bar';
+      panels.forEach(function (panel, i) {
+        var label = panel.getAttribute('data-label') || 'Tab ' + (i + 1);
+        var btn = global.document.createElement('button');
+        btn.className = 'tabs-bar-btn' + (i === 0 ? ' active' : '');
+        btn.textContent = label;
+        btn.addEventListener('click', function () {
+          Array.prototype.slice.call(tabs.querySelectorAll('.tabs-bar-btn')).forEach(function (b) { b.classList.remove('active'); });
+          panels.forEach(function (p) { p.classList.remove('active'); });
+          btn.classList.add('active');
+          panel.classList.add('active');
+        });
+        bar.appendChild(btn);
+      });
+      tabs.insertBefore(bar, tabs.firstChild);
+      panels[0].classList.add('active');
+    });
+  }
+
+  function init(root) {
+    var r = root || global.document;
+    initQrCodes(r);
+    initTabs(r);
+  }
+
+  // ---- copy-as-markdown: DOM -> Markdown walker ---------------------------
+  // Converts a selected DOM fragment back to Markdown so that copying rendered
+  // content yields source, not HTML. Standard constructs are reconstructed from
+  // their tags; generated constructs (math, mermaid, smiles, qr, youtube, chart) carry
+  // a [data-md] breadcrumb that is emitted verbatim. Written without template
+  // literals/backticks because this whole file is a String.raw template.
+  var BT = String.fromCharCode(96);
+  var FENCE = BT + BT + BT;
+
+  function rt_repeat(s, n) {
+    var out = '';
+    for (var i = 0; i < n; i++) out += s;
+    return out;
+  }
+
+  function rt_attr(node, name) {
+    return node && node.getAttribute ? node.getAttribute(name) : null;
+  }
+
+  function rt_isBlockElement(node) {
+    if (!node || node.nodeType !== 1) return false;
+    if (rt_attr(node, 'data-md') != null) return true;
+    var tag = node.tagName.toLowerCase();
+    if (/^(p|div|section|article|figure|h[1-6]|ul|ol|li|blockquote|pre|table|thead|tbody|tr|hr|details)$/.test(tag)) return true;
+    if (node.classList && (node.classList.contains('katex-display') || node.classList.contains('mermaid'))) return true;
+    return false;
+  }
+
+  function rt_katex(node, display) {
+    var ann = node.querySelector ? node.querySelector('annotation[encoding="application/x-tex"]') : null;
+    var tex = (ann ? ann.textContent : node.textContent) || '';
+    tex = tex.replace(/^\s+|\s+$/g, '');
+    if (display) return '$$\n' + tex + '\n$$';
+    return '$' + tex + '$';
+  }
+
+  function rt_img(node) {
+    var alt = rt_attr(node, 'alt') || '';
+    var src = rt_attr(node, 'src') || '';
+    var title = rt_attr(node, 'title');
+    return '![' + alt + '](' + src + (title ? ' "' + title + '"' : '') + ')';
+  }
+
+  function rt_inlineChildren(node) {
+    var out = '';
+    var kids = node.childNodes;
+    for (var i = 0; i < kids.length; i++) out += rt_inlineNode(kids[i]);
+    return out;
+  }
+
+  function rt_inlineNode(node) {
+    if (node.nodeType === 3) return node.nodeValue.replace(/\s+/g, ' ');
+    if (node.nodeType !== 1) return '';
+    var dm = rt_attr(node, 'data-md');
+    if (dm != null) return dm;
+    if (node.classList && node.classList.contains('katex')) return rt_katex(node, false);
+    var tag = node.tagName.toLowerCase();
+    switch (tag) {
+      case 'strong': case 'b': return '**' + rt_inlineChildren(node) + '**';
+      case 'em': case 'i': return '*' + rt_inlineChildren(node) + '*';
+      case 'code': return BT + (node.textContent || '') + BT;
+      case 'a':
+        var href = rt_attr(node, 'href') || '';
+        var title = rt_attr(node, 'title');
+        return '[' + rt_inlineChildren(node) + '](' + href + (title ? ' "' + title + '"' : '') + ')';
+      case 'del': case 's': return '~~' + rt_inlineChildren(node) + '~~';
+      case 'ins': return '++' + rt_inlineChildren(node) + '++';
+      case 'mark': return '==' + rt_inlineChildren(node) + '==';
+      case 'sub': return '~' + rt_inlineChildren(node) + '~';
+      case 'sup': return '^' + rt_inlineChildren(node) + '^';
+      case 'br': return '  \n';
+      case 'img': return rt_img(node);
+      case 'input': return '';
+      case 'span':
+        var spCls = (rt_attr(node, 'class') || '').trim();
+        return spCls ? '{{sp[' + spCls + '] ' + rt_inlineChildren(node) + '}}' : rt_inlineChildren(node);
+      default: return rt_inlineChildren(node);
+    }
+  }
+
+  function rt_align(cell) {
+    var style = (rt_attr(cell, 'style') || '').toLowerCase();
+    if (style.indexOf('center') !== -1) return 'center';
+    if (style.indexOf('right') !== -1) return 'right';
+    if (style.indexOf('left') !== -1) return 'left';
+    return '';
+  }
+
+  function rt_sep(align) {
+    if (align === 'center') return ':---:';
+    if (align === 'right') return '---:';
+    if (align === 'left') return ':---';
+    return '---';
+  }
+
+  function rt_tableRows(headRow, bodyRows) {
+    var rows = [];
+    var header = [];
+    var aligns = [];
+    if (headRow) {
+      var hc = headRow.children;
+      for (var i = 0; i < hc.length; i++) { header.push(rt_inlineChildren(hc[i]).trim()); aligns.push(rt_align(hc[i])); }
+    }
+    rows.push('| ' + header.join(' | ') + ' |');
+    var seps = [];
+    for (var s = 0; s < header.length; s++) seps.push(rt_sep(aligns[s]));
+    rows.push('| ' + seps.join(' | ') + ' |');
+    for (var r = 0; r < bodyRows.length; r++) {
+      var cells = [];
+      var tds = bodyRows[r].children;
+      for (var c = 0; c < tds.length; c++) cells.push(rt_inlineChildren(tds[c]).trim());
+      rows.push('| ' + cells.join(' | ') + ' |');
+    }
+    return rows.join('\n');
+  }
+
+  function rt_table(tbl) {
+    var headRow = tbl.querySelector ? tbl.querySelector('thead tr') : null;
+    var bodyRows = tbl.querySelectorAll ? tbl.querySelectorAll('tbody tr') : [];
+    return rt_tableRows(headRow, bodyRows);
+  }
+
+  // Reconstruct a table from bare table-internal nodes (thead/tbody/tr), e.g.
+  // when a selection inside a table loses its <table> wrapper.
+  function rt_tableFromParts(parts) {
+    var headRow = null;
+    var bodyRows = [];
+    for (var i = 0; i < parts.length; i++) {
+      var p = parts[i];
+      var tag = p.tagName.toLowerCase();
+      if (tag === 'thead') { var tr = p.querySelector ? p.querySelector('tr') : null; if (tr && !headRow) headRow = tr; }
+      else if (tag === 'tbody') { var trs = p.querySelectorAll ? p.querySelectorAll('tr') : []; for (var j = 0; j < trs.length; j++) bodyRows.push(trs[j]); }
+      else if (tag === 'tr') { if (!headRow) headRow = p; else bodyRows.push(p); }
+    }
+    return rt_tableRows(headRow, bodyRows);
+  }
+
+  function rt_codeBlock(pre) {
+    var code = pre.querySelector ? (pre.querySelector('code') || pre) : pre;
+    var lang = '';
+    var cls = rt_attr(code, 'class') || '';
+    var m = cls.match(/language-([A-Za-z0-9_+#-]+)/);
+    if (m) lang = m[1];
+    var text = (code.textContent || '').replace(/\n$/, '');
+    return FENCE + lang + '\n' + text + '\n' + FENCE;
+  }
+
+  function rt_list(node, ordered, depth) {
+    var items = [];
+    var idx = 1;
+    var kids = node.childNodes;
+    for (var i = 0; i < kids.length; i++) {
+      var li = kids[i];
+      if (li.nodeType !== 1 || li.tagName.toLowerCase() !== 'li') continue;
+      items.push(rt_listItem(li, ordered, idx, depth));
+      idx++;
+    }
+    return items.join('\n');
+  }
+
+  function rt_listItem(li, ordered, idx, depth) {
+    var indent = rt_repeat('  ', depth);
+    var marker = ordered ? (idx + '. ') : '- ';
+    var task = '';
+    var cb = li.querySelector ? li.querySelector('input[type="checkbox"]') : null;
+    if (cb) task = (cb.checked || rt_attr(cb, 'checked') != null) ? '[x] ' : '[ ] ';
+    var inlineParts = '';
+    var nested = '';
+    var kids = li.childNodes;
+    for (var i = 0; i < kids.length; i++) {
+      var c = kids[i];
+      if (c.nodeType === 1 && /^(ul|ol)$/.test(c.tagName.toLowerCase())) {
+        nested += '\n' + rt_list(c, c.tagName.toLowerCase() === 'ol', depth + 1);
+      } else {
+        inlineParts += rt_inlineNode(c);
+      }
+    }
+    inlineParts = inlineParts.replace(/\s+/g, ' ').trim();
+    return indent + marker + task + inlineParts + nested;
+  }
+
+  function rt_blockquote(node) {
+    var inner = rt_blockChildren(node);
+    var lines = inner.split('\n');
+    var out = [];
+    for (var i = 0; i < lines.length; i++) out.push(lines[i] ? '> ' + lines[i] : '>');
+    return out.join('\n');
+  }
+
+  function rt_blockChildren(node) {
+    var parts = [];
+    var kids = node.childNodes;
+    var i = 0;
+    while (i < kids.length) {
+      var k = kids[i];
+      // A selection can contain bare <li> elements (when the user selects a
+      // list's contents rather than the <ul>/<ol> wrapper). Group a run of them
+      // into a bullet list instead of emitting each as a separate block.
+      if (k.nodeType === 1 && k.tagName.toLowerCase() === 'li') {
+        var lis = [];
+        while (i < kids.length) {
+          var kk = kids[i];
+          if (kk.nodeType === 1 && kk.tagName.toLowerCase() === 'li') { lis.push(kk); i++; }
+          else if (kk.nodeType === 3 && !(kk.nodeValue || '').trim()) { i++; }
+          else break;
+        }
+        var items = [];
+        for (var j = 0; j < lis.length; j++) items.push(rt_listItem(lis[j], false, j + 1, 0));
+        parts.push(items.join('\n'));
+        continue;
+      }
+      // Bare table-internal nodes (selection inside a table that lost its
+      // <table> wrapper) — reconstruct a Markdown table.
+      if (k.nodeType === 1 && /^(thead|tbody|tr)$/.test(k.tagName.toLowerCase())) {
+        var trows = [];
+        while (i < kids.length) {
+          var tk = kids[i];
+          if (tk.nodeType === 1 && /^(thead|tbody|tr)$/.test(tk.tagName.toLowerCase())) { trows.push(tk); i++; }
+          else if (tk.nodeType === 3 && !(tk.nodeValue || '').trim()) { i++; }
+          else break;
+        }
+        parts.push(rt_tableFromParts(trows));
+        continue;
+      }
+      var s = rt_blockNode(k);
+      if (s && s.replace(/\s/g, '') !== '') parts.push(s.replace(/\s+$/, ''));
+      i++;
+    }
+    return parts.join('\n\n');
+  }
+
+  var rt_containerNames = ['info', 'success', 'warning', 'danger', 'left', 'right', 'center', 'cols', 'col', 'tabs', 'tab'];
+  // A markdown-it-container div.name (or details.spoil) -> its ::: name
+  // directive name, or null if the node is not a container.
+  function rt_containerName(node) {
+    if (node.nodeType !== 1 || !node.classList) return null;
+    var tag = node.tagName.toLowerCase();
+    if (tag === 'details' && node.classList.contains('spoil')) {
+      var sum = node.querySelector ? node.querySelector('summary') : null;
+      var title = sum ? (sum.textContent || '').trim() : '';
+      return title ? 'spoil ' + title : 'spoil';
+    }
+    if (tag !== 'div') return null;
+    for (var i = 0; i < rt_containerNames.length; i++) {
+      var n = rt_containerNames[i];
+      if (node.classList.contains(n)) {
+        if (n === 'tab') { var lbl = rt_attr(node, 'data-label'); return lbl ? 'tab ' + lbl : 'tab'; }
+        return n;
+      }
+    }
+    return null;
+  }
+  // Emit a ::: name ... ::: block, using a fence longer than any inner fence so
+  // nested containers (cols > col, tabs > tab) re-parse correctly.
+  function rt_containerMd(node, name) {
+    var parts = [];
+    var kids = node.childNodes;
+    for (var i = 0; i < kids.length; i++) {
+      var k = kids[i];
+      if (k.nodeType === 1) {
+        var ktag = k.tagName.toLowerCase();
+        if (ktag === 'summary') continue; // spoil title, captured in the name
+        if (k.classList && k.classList.contains('tabs-bar')) continue; // JS-injected tab buttons
+      }
+      var m = rt_blockNode(k);
+      if (m && m.trim()) parts.push(m.trim());
+    }
+    var inner = parts.join('\n\n');
+    var maxFence = 2;
+    var lines = inner.split('\n');
+    for (var j = 0; j < lines.length; j++) {
+      var mm = lines[j].match(/^(:{3,})/);
+      if (mm && mm[1].length > maxFence) maxFence = mm[1].length;
+    }
+    var fence = rt_repeat(':', Math.max(3, maxFence + 1));
+    return fence + ' ' + name + '\n' + inner + '\n' + fence;
+  }
+
+  function rt_blockNode(node) {
+    if (node.nodeType === 3) {
+      var t = node.nodeValue;
+      return (t && t.trim()) ? t.replace(/\s+/g, ' ').trim() : '';
+    }
+    if (node.nodeType !== 1) return '';
+    var dm = rt_attr(node, 'data-md');
+    if (dm != null) return dm;
+    if (node.classList) {
+      // Display math: the katex-display span OR its katex-block <p> wrapper.
+      // Without this the wrapper is walked as a paragraph and the inner katex is
+      // emitted as inline math instead of a block equation.
+      if (node.classList.contains('katex-display') || node.classList.contains('katex-block')) {
+        var k = node.querySelector ? node.querySelector('.katex') : null;
+        return rt_katex(k || node, true);
+      }
+      if (node.classList.contains('mermaid')) return '{{mermaid\n' + (node.textContent || '').trim() + '\n}}';
+    }
+    var tag = node.tagName.toLowerCase();
+    var hm = tag.match(/^h([1-6])$/);
+    if (hm) return rt_repeat('#', parseInt(hm[1], 10)) + ' ' + rt_inlineChildren(node).trim();
+    switch (tag) {
+      case 'p': return rt_inlineChildren(node).trim();
+      case 'ul': return rt_list(node, false, 0);
+      case 'ol': return rt_list(node, true, 0);
+      case 'pre': return rt_codeBlock(node);
+      case 'blockquote': return rt_blockquote(node);
+      case 'table': return rt_table(node);
+      case 'hr': return '---';
+      case 'li': return rt_inlineChildren(node).trim();
+      case 'figure': case 'div': case 'section': case 'article': case 'details': case 'summary':
+        var cn = rt_containerName(node);
+        if (cn) return rt_containerMd(node, cn);
+        return rt_blockChildren(node);
+      default: return rt_inlineNode(node).trim();
+    }
+  }
+
+  function elementToMarkdown(root) {
+    if (!root) return '';
+    var hasBlock = false;
+    var kids = root.childNodes || [];
+    for (var i = 0; i < kids.length; i++) {
+      if (rt_isBlockElement(kids[i])) { hasBlock = true; break; }
+    }
+    var out = hasBlock ? rt_blockChildren(root) : rt_inlineChildren(root);
+    return out.replace(/[ \t]+\n/g, '\n').replace(/\n{3,}/g, '\n\n').replace(/^\s+|\s+$/g, '');
+  }
+
+  function rt_isEditable(node) {
+    while (node) {
+      if (node.nodeType === 1) {
+        var tag = node.tagName.toLowerCase();
+        if (tag === 'input' || tag === 'textarea') return true;
+        if (node.isContentEditable) return true;
+      }
+      node = node.parentNode;
+    }
+    return false;
+  }
+
+  function rt_isCopyRoot(node) {
+    return node.nodeType === 1 && node.classList &&
+      (node.classList.contains('markdown-body') || rt_attr(node, 'data-orz-copy') != null);
+  }
+  function rt_withinCopyRoot(node) {
+    while (node) {
+      if (rt_isCopyRoot(node)) return true;
+      node = node.parentNode;
+    }
+    return false;
+  }
+
+  // When a selection sits entirely within one table/blockquote/pre — or inside a
+  // ::: container — copy that whole block, so the wrapper is included (a partial
+  // table/quote fragment isn't valid Markdown, and a copied container should keep
+  // its ::: fence). Browsers often clone such selections without the wrapper.
+  // Tables/quotes/code don't nest, so the innermost wins; containers DO nest
+  // (cols > col, tabs > tab), so promote to the OUTERMOST one.
+  function rt_promotableBlock(node) {
+    var container = null;
+    while (node && !rt_isCopyRoot(node)) {
+      if (node.nodeType === 1) {
+        var tag = node.tagName.toLowerCase();
+        if (tag === 'table' || tag === 'blockquote' || tag === 'pre') return node;
+        // A selection inside a display equation copies the whole block equation;
+        // a partial KaTeX fragment is not valid Markdown.
+        if (node.classList &&
+            (node.classList.contains('katex-block') || node.classList.contains('katex-display'))) return node;
+        if (rt_containerName(node)) container = node;
+      }
+      node = node.parentNode;
+    }
+    return container;
+  }
+
+  function onCopy(event) {
+    if (!global.document) return;
+    var sel = global.getSelection ? global.getSelection()
+      : (global.document.getSelection ? global.document.getSelection() : null);
+    if (!sel || sel.rangeCount === 0 || sel.isCollapsed) return;
+    if (rt_isEditable(sel.anchorNode) || rt_isEditable(sel.focusNode)) return;
+    if (!rt_withinCopyRoot(sel.anchorNode) && !rt_withinCopyRoot(sel.focusNode)) return;
+
+    var md;
+    var range0 = sel.getRangeAt(0);
+    var common = range0.commonAncestorContainer;
+    var promoted = rt_promotableBlock(common.nodeType === 1 ? common : common.parentNode);
+    if (promoted && sel.rangeCount === 1) {
+      var pwrap = global.document.createElement('div');
+      pwrap.appendChild(promoted.cloneNode(true));
+      md = elementToMarkdown(pwrap);
+    } else {
+      var container = global.document.createElement('div');
+      for (var i = 0; i < sel.rangeCount; i++) container.appendChild(sel.getRangeAt(i).cloneContents());
+      md = elementToMarkdown(container);
+    }
+    if (!md) return;
+    var cd = event.clipboardData || global.clipboardData;
+    if (cd && cd.setData) {
+      cd.setData('text/plain', md);
+      if (event.preventDefault) event.preventDefault();
+    }
+  }
+
+  function bindGlobalHandlers() {
+    if (!global.document || global.__orzMarkdownRuntimeBound) return;
+    global.__orzMarkdownRuntimeBound = true;
+
+    global.document.addEventListener('click', function (event) {
+      if (expandedQr && !expandedQr.contains(event.target)) {
+        collapseQr();
+      }
+    });
+
+    global.document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') {
+        collapseQr();
+      }
+    });
+
+    // Copy rendered selections as Markdown source.
+    global.document.addEventListener('copy', onCopy);
+  }
+
+  global.OrzMarkdownRuntime = Object.assign({}, global.OrzMarkdownRuntime, {
+    init: init,
+    initQrCodes: initQrCodes,
+    initTabs: initTabs,
+    collapseQr: collapseQr,
+    elementToMarkdown: elementToMarkdown,
+  });
+
+  bindGlobalHandlers();
+
+  if (global.document) {
+    if (global.document.readyState === 'loading') {
+      global.document.addEventListener('DOMContentLoaded', function () {
+        init(global.document);
+      }, { once: true });
+    } else {
+      init(global.document);
+    }
+  }
+})(typeof globalThis !== 'undefined' ? globalThis : window);
+</script>
+</body>
+</html>
