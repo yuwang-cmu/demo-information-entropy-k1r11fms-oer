@@ -20,7 +20,7 @@
 - **1.4a–b:** Explain capacity and state the noisy-channel theorem with finite-length boundaries.
 :::
 
-## Chapter Logic
+## Chapter Logic{{attrs[#blk-hqcm8ape5xzs]}}
 
 Suppose a receiver sees a symbol. How much has been learned? The answer depends on what was plausible before the symbol arrived. If one outcome was nearly certain, observing it resolves little uncertainty. If an outcome was rare, observing it is more informative in Shannon's statistical sense. This chapter turns that intuition into a chain: probability → self-information → average uncertainty → shared information → channel capacity → bounded reliability claim.
 
@@ -257,7 +257,7 @@ Before quoting a capacity, ask:
 - Is the decoder matched to the assumed transition probabilities?
 - Is the claim asymptotic, bounded, simulated, or experimentally measured?
 
-## Synthesis
+## Synthesis{{attrs[#blk-v0n14civqpjy]}}
 
 The chapter's logic can be compressed into four questions:
 
@@ -268,7 +268,7 @@ The chapter's logic can be compressed into four questions:
 
 Chapter 2 starts at that fourth question. It replaces “codes exist” with visible structure: redundancy, distance, parity checks, syndromes, and decoders.
 
-## Asset and License Record for This Chapter
+## Asset and License Record for This Chapter{{attrs[#blk-a4jmpaj4fbud]}}
 
 - `assets/goldstone-antenna.jpg` — NASA/JPL, public domain; used without modification.
 - `assets/surprise-entropy.svg` — original accessible diagram by Yu Wang, CC BY-SA 4.0.
