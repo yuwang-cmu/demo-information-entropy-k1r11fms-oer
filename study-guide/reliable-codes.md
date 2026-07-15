@@ -24,7 +24,7 @@
 
 Noise can make a received word differ from the transmitted word. If every possible bit string is a valid message, the receiver has no structural basis for deciding whether anything changed. An error-correcting code deliberately uses only a subset of possible transmitted strings. The unused strings become space between valid messages. A decoder uses that space—and assumptions about likely corruption—to infer, reject, or request another observation.
 
-![Two codewords at Hamming distance three have separate radius-one error neighborhoods.](../assets/hamming-space.svg)
+![Two codewords at Hamming distance three have separate radius-one error neighborhoods.](https://alembic.orz.how/d/doc-rnvd5wsk2a50)
 
 **Visual description:** Valid words `000000` and `111000` differ in three positions. Each is surrounded by strings one bit away. Because those radius-one neighborhoods do not overlap, a received word with at most one flipped bit has a unique nearest valid word in this two-codeword illustration.
 
@@ -92,7 +92,7 @@ No. Passing means only that the received word satisfies the parity constraint. Z
 
 ### A physical message still needs conventions
 
-![A gloved technician holds a gold-plated Voyager record during production.](../assets/golden-record.jpg)
+![A gloved technician holds a gold-plated Voyager record during production.](https://alembic.orz.how/d/doc-0yq7y9w9g08d)
 
 The Voyager Golden Record is a physical message, but its recoverability depends on far more than durable material. A receiver would need to infer symbol conventions, timing, representation, and decoding instructions. Error-correcting codes solve a narrower problem: recovering symbols within a defined representation and channel model. They do not automatically solve interpretation, shared context, or semantics.
 
@@ -203,7 +203,7 @@ $$
 
 Each single-bit error produces the three-bit label of its position. Reading the syndrome in high-to-low check order identifies the bit position. This elegant rule depends on the one-error model.
 
-![A seven-bit received word enters parity checks; syndrome 100 identifies candidate position four, which is flipped and rechecked.](../assets/syndrome-decoding.svg)
+![A seven-bit received word enters parity checks; syndrome 100 identifies candidate position four, which is flipped and rechecked.](https://alembic.orz.how/d/doc-l87bjtyhuzz7)
 
 **Visual description:** Received `0111011` differs from valid codeword `0110011` at position 4. Its syndrome is `100` when written high-order row first, matching position 4. The workflow flips that candidate position and repeats the checks. A warning states that multiple errors can mislead the decoder.
 

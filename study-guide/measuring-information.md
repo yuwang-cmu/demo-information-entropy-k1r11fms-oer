@@ -24,7 +24,7 @@
 
 Suppose a receiver sees a symbol. How much has been learned? The answer depends on what was plausible before the symbol arrived. If one outcome was nearly certain, observing it resolves little uncertainty. If an outcome was rare, observing it is more informative in Shannon's statistical sense. This chapter turns that intuition into a chain: probability → self-information → average uncertainty → shared information → channel capacity → bounded reliability claim.
 
-![Three outcome cards show that lower probability corresponds to greater self-information; entropy is the expected self-information.](../assets/surprise-entropy.svg)
+![Three outcome cards show that lower probability corresponds to greater self-information; entropy is the expected self-information.](https://alembic.orz.how/d/doc-bbc7xxpr4bav)
 
 **Visual description:** Outcomes with probabilities $1/2$, $1/4$, and $1/8$ carry 1, 2, and 3 bits of self-information. Entropy is the probability-weighted average across all possible outcomes, not the value of one card.
 
@@ -75,7 +75,7 @@ A zero-probability outcome has no finite self-information under the formula. Tha
 
 ### Physical signals and abstract symbols
 
-![A NASA Deep Space Network antenna at Goldstone appears against a glowing evening sky.](../assets/goldstone-antenna.jpg)
+![A NASA Deep Space Network antenna at Goldstone appears against a glowing evening sky.](https://alembic.orz.how/d/doc-gjvg1c4zjueb)
 
 The 70-metre antenna at Goldstone is part of a physical communication system. Voltages, electromagnetic fields, amplifiers, timing, and interference matter. Information theory abstracts away many of those details long enough to ask a precise question: given a model for input and output symbols, how much uncertainty can transmission resolve? The abstraction is powerful because the same mathematics can describe many physical carriers, but no abstraction automatically validates the model for a particular link.
 
@@ -157,7 +157,7 @@ $$
 
 It is symmetric: $I(X;Y)=I(Y;X)$. For discrete variables, it is nonnegative and equals zero exactly when the variables are independent.
 
-![Two overlapping circles provide conceptual entropy bookkeeping: the overlap is mutual information, and the non-overlap is conditional uncertainty.](../assets/mutual-information.svg)
+![Two overlapping circles provide conceptual entropy bookkeeping: the overlap is mutual information, and the non-overlap is conditional uncertainty.](https://alembic.orz.how/d/doc-jbffwgxb9usd)
 
 **Visual description:** The uncertainty in $X$ and $Y$ is drawn as overlapping regions. The overlap $I(X;Y)$ represents shared information; the remaining regions represent $H(X|Y)$ and $H(Y|X)$. The areas are conceptual bookkeeping for discrete Shannon entropy, not physical regions or a universal geometry.
 
@@ -182,7 +182,7 @@ Mutual information measures statistical dependence, not direction or mechanism. 
 
 A **communication channel** is a probabilistic relationship between an input $X$ and output $Y$. A simple **binary symmetric channel** flips each input bit with probability $p$ and preserves it with probability $1-p$, independently under the model.
 
-![Input zero and one connect to matching outputs with probability one minus p and flipped outputs with probability p.](../assets/noisy-channel.svg)
+![Input zero and one connect to matching outputs with probability one minus p and flipped outputs with probability p.](https://alembic.orz.how/d/doc-jp1uwc2pi10z)
 
 **Visual description:** Thick teal paths preserve 0 or 1 with probability $1-p$. Dashed coral paths flip the bit with probability $p$. The diagram specifies conditional probabilities; it does not claim that all real channels have independent symmetric errors.
 
@@ -223,7 +223,7 @@ $$
 
 The unit matters. “Bits per channel use” is not automatically “bits per second”; converting requires a definition of channel use and timing.
 
-![A rate axis is divided at capacity C: below it, arbitrarily small error is asymptotically achievable; above it, it is not.](../assets/capacity-boundary.svg)
+![A rate axis is divided at capacity C: below it, arbitrarily small error is asymptotically achievable; above it, it is not.](https://alembic.orz.how/d/doc-j1836lih1xa6)
 
 **Visual description:** Rates below $C$ lie in an achievable asymptotic region; rates above $C$ lie in an impossible region for arbitrarily reliable communication under the model. A note emphasizes that finite block length, latency, and complexity retain nonzero trade-offs.
 

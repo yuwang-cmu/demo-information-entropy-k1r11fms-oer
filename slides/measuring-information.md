@@ -39,7 +39,7 @@ Finite discrete models; no claim that information measures semantic value.
 <!-- slide main-side 3/2 -->
 ## A physical signal, an abstract question
 <!-- @main -->
-![A NASA Deep Space Network antenna at Goldstone against an evening sky.](../assets/goldstone-antenna.jpg)
+![A NASA Deep Space Network antenna at Goldstone against an evening sky.](https://alembic.orz.how/d/doc-gjvg1c4zjueb)
 <!-- @side -->
 The antenna receives physical electromagnetic signals.
 
@@ -56,7 +56,7 @@ Information theory asks:
 <!-- slide main-side 3/2 -->
 ## The logarithmic scale
 <!-- @main -->
-![Probabilities one half, one quarter, and one eighth correspond to one, two, and three bits; entropy averages across outcomes.](../assets/surprise-entropy.svg)
+![Probabilities one half, one quarter, and one eighth correspond to one, two, and three bits; entropy averages across outcomes.](https://alembic.orz.how/d/doc-bbc7xxpr4bav)
 <!-- @side -->
 $$
 I(x)=-\log_2p(x)
@@ -181,7 +181,7 @@ Which logarithm base is used?
 <!-- slide main-side 3/2 -->
 ## Shared and remaining uncertainty
 <!-- @main -->
-![Overlapping entropy regions show mutual information as shared uncertainty reduction and conditional entropy as what remains.](../assets/mutual-information.svg)
+![Overlapping entropy regions show mutual information as shared uncertainty reduction and conditional entropy as what remains.](https://alembic.orz.how/d/doc-jbffwgxb9usd)
 <!-- @side -->
 $$
 I(X;Y)=H(X)-H(X|Y)
@@ -215,7 +215,7 @@ Association is not causation.
 <!-- slide main-side 3/2 -->
 ## Channel = conditional probability rule
 <!-- @main -->
-![A binary symmetric channel preserves each bit with probability one minus p and flips it with probability p.](../assets/noisy-channel.svg)
+![A binary symmetric channel preserves each bit with probability one minus p and flips it with probability p.](https://alembic.orz.how/d/doc-jp1uwc2pi10z)
 <!-- @side -->
 For uniform input:
 
@@ -251,7 +251,7 @@ The uniform input achieves the maximum.
 <!-- slide main-side 3/2 -->
 ## The asymptotic boundary
 <!-- @main -->
-![Rates below capacity can achieve arbitrarily small error asymptotically; rates above capacity cannot.](../assets/capacity-boundary.svg)
+![Rates below capacity can achieve arbitrarily small error asymptotically; rates above capacity cannot.](https://alembic.orz.how/d/doc-j1836lih1xa6)
 <!-- @side -->
 ### Below $C$
 Good code families exist as block length grows.

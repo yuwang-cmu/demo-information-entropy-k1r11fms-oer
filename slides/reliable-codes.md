@@ -35,7 +35,7 @@ footer: Coursewerk demonstration · Not for actual teaching · CC BY-SA 4.0
 <!-- slide main-side 3/2 -->
 ## A physical message still needs a code
 <!-- @main -->
-![A gloved technician holds a Voyager Golden Record during production.](../assets/golden-record.jpg)
+![A gloved technician holds a Voyager Golden Record during production.](https://alembic.orz.how/d/doc-0yq7y9w9g08d)
 <!-- @side -->
 Durability is not enough.
 
@@ -103,7 +103,7 @@ $$
 <!-- slide main-side 3/2 -->
 ## Distance creates decoding neighborhoods
 <!-- @main -->
-![Two codewords at distance three have disjoint one-error neighborhoods.](../assets/hamming-space.svg)
+![Two codewords at distance three have disjoint one-error neighborhoods.](https://alembic.orz.how/d/doc-rnvd5wsk2a50)
 <!-- @side -->
 $$
 d_{min}=3
@@ -188,7 +188,7 @@ The syndrome labels a coset—not certainty about history.
 <!-- slide main-side 3/2 -->
 ## Single-bit decoding workflow
 <!-- @main -->
-![Received 0111011 has syndrome 100; position four is flipped to candidate 0110011 and checks are repeated.](../assets/syndrome-decoding.svg)
+![Received 0111011 has syndrome 100; position four is flipped to candidate 0110011 and checks are repeated.](https://alembic.orz.how/d/doc-l87bjtyhuzz7)
 <!-- @side -->
 Under the one-error model:
 
