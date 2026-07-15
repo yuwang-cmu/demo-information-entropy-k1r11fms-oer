@@ -1,0 +1,1249 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-15T00:19:26.489Z",
+  "components": [
+    {
+      "id": "component:alembic.json",
+      "path": "alembic.json",
+      "type": "manifest",
+      "chapter": null,
+      "hash": "4abac7c4b999d6140f511da30bf21290e8c1a24b4eca48e7e9a3b6835f114bac",
+      "dependencies": {
+        "component:metadata/FOUNDATION.json": "e9e33246485a7c63a14a9a8f364d862bac27dcd144cbf94efab8f33c6090ba7d"
+      }
+    },
+    {
+      "id": "component:assessment-support/measuring-information.md",
+      "path": "assessment-support/measuring-information.md",
+      "type": "assessment-support",
+      "chapter": "measuring-information",
+      "hash": "2f4296653835494d4e5912be1167fec763cfec08a855623e3a6f011945a67f9a",
+      "dependencies": {
+        "component:alembic.json": "4abac7c4b999d6140f511da30bf21290e8c1a24b4eca48e7e9a3b6835f114bac",
+        "component:concepts/measuring-information.md": "2b5ec887e3cd4736967d769db28e27dab0542f1c311c30bb58c77b844c306eec",
+        "component:metadata/FOUNDATION.json": "e9e33246485a7c63a14a9a8f364d862bac27dcd144cbf94efab8f33c6090ba7d",
+        "component:metadata/SOURCE_RECORD.json": "01bdd4bb6dd932fe4ad8b2423d0c241305ac1548bcca8c7d75ed53231fcfdb7c",
+        "component:study-guide/measuring-information.md": "1df63eb54f1932c5ecd830e141abde889b2fa7db4d0911d903fb0ecb394d294d"
+      }
+    },
+    {
+      "id": "component:assessment-support/reliable-codes.md",
+      "path": "assessment-support/reliable-codes.md",
+      "type": "assessment-support",
+      "chapter": "reliable-codes",
+      "hash": "74bed0e558fd495adbd571fc13f5a25fe95322abfde1ea22cb6d1bea5024b3f8",
+      "dependencies": {
+        "component:alembic.json": "4abac7c4b999d6140f511da30bf21290e8c1a24b4eca48e7e9a3b6835f114bac",
+        "component:concepts/reliable-codes.md": "93e1bff0ec18cece561acbe0d842fc5e361a33870f4221fe383adceb01b789f2",
+        "component:metadata/FOUNDATION.json": "e9e33246485a7c63a14a9a8f364d862bac27dcd144cbf94efab8f33c6090ba7d",
+        "component:metadata/SOURCE_RECORD.json": "01bdd4bb6dd932fe4ad8b2423d0c241305ac1548bcca8c7d75ed53231fcfdb7c",
+        "component:study-guide/reliable-codes.md": "7e3e3f4189d024e032c5fdf07898f7295b255c941bad6f55e989897ac9f3173d"
+      }
+    },
+    {
+      "id": "component:assets/capacity-boundary.svg",
+      "path": "assets/capacity-boundary.svg",
+      "type": "asset",
+      "chapter": null,
+      "hash": "521cea66d2dd9d39b6eddb70642fb6a2064bd5e693f112c707350599e3912338",
+      "dependencies": {
+        "component:metadata/FOUNDATION.json": "e9e33246485a7c63a14a9a8f364d862bac27dcd144cbf94efab8f33c6090ba7d"
+      }
+    },
+    {
+      "id": "component:assets/golden-record.jpg",
+      "path": "assets/golden-record.jpg",
+      "type": "asset",
+      "chapter": null,
+      "hash": "16de4e62339b31017438237d3324560f3611fae2dc6ce19df4fb8e96e2655878",
+      "dependencies": {
+        "component:metadata/FOUNDATION.json": "e9e33246485a7c63a14a9a8f364d862bac27dcd144cbf94efab8f33c6090ba7d"
+      }
+    },
+    {
+      "id": "component:assets/goldstone-antenna.jpg",
+      "path": "assets/goldstone-antenna.jpg",
+      "type": "asset",
+      "chapter": null,
+      "hash": "7d2e414851977038d44d5f0a21a26a4152e54d2127dcc11b42472d988dbaccde",
+      "dependencies": {
+        "component:metadata/FOUNDATION.json": "e9e33246485a7c63a14a9a8f364d862bac27dcd144cbf94efab8f33c6090ba7d"
+      }
+    },
+    {
+      "id": "component:assets/hamming-space.svg",
+      "path": "assets/hamming-space.svg",
+      "type": "asset",
+      "chapter": null,
+      "hash": "654af91d74fba34a3eb6234efd9593e36bd5a25db5cb72e315f14cb225480f06",
+      "dependencies": {
+        "component:metadata/FOUNDATION.json": "e9e33246485a7c63a14a9a8f364d862bac27dcd144cbf94efab8f33c6090ba7d"
+      }
+    },
+    {
+      "id": "component:assets/mutual-information.svg",
+      "path": "assets/mutual-information.svg",
+      "type": "asset",
+      "chapter": null,
+      "hash": "d7c97e1f25e1e36e374b5d3fe77784b357940f3443e65c62be2e83adc3490b79",
+      "dependencies": {
+        "component:metadata/FOUNDATION.json": "e9e33246485a7c63a14a9a8f364d862bac27dcd144cbf94efab8f33c6090ba7d"
+      }
+    },
+    {
+      "id": "component:assets/noisy-channel.svg",
+      "path": "assets/noisy-channel.svg",
+      "type": "asset",
+      "chapter": null,
+      "hash": "ae039acb2eef9cb7c917dfb13e5ee43b8dfd817c99cc6908952f54a0f0cd78d1",
+      "dependencies": {
+        "component:metadata/FOUNDATION.json": "e9e33246485a7c63a14a9a8f364d862bac27dcd144cbf94efab8f33c6090ba7d"
+      }
+    },
+    {
+      "id": "component:assets/surprise-entropy.svg",
+      "path": "assets/surprise-entropy.svg",
+      "type": "asset",
+      "chapter": null,
+      "hash": "808c76f1394643ee26433de7656101da35b5a1d209bab5902ea9f1ef701f4dc5",
+      "dependencies": {
+        "component:metadata/FOUNDATION.json": "e9e33246485a7c63a14a9a8f364d862bac27dcd144cbf94efab8f33c6090ba7d"
+      }
+    },
+    {
+      "id": "component:assets/syndrome-decoding.svg",
+      "path": "assets/syndrome-decoding.svg",
+      "type": "asset",
+      "chapter": null,
+      "hash": "60bf47d65d8f00afe4647e5b46827319f9534e4c5e552b69c06d771f49c8f10f",
+      "dependencies": {
+        "component:metadata/FOUNDATION.json": "e9e33246485a7c63a14a9a8f364d862bac27dcd144cbf94efab8f33c6090ba7d"
+      }
+    },
+    {
+      "id": "component:concepts/course.md",
+      "path": "concepts/course.md",
+      "type": "concepts",
+      "chapter": null,
+      "hash": "37f58fd03f12963c7d08d83327ab6eaee4d349d584ac019cfa87c3f63fc6162b",
+      "dependencies": {
+        "component:alembic.json": "4abac7c4b999d6140f511da30bf21290e8c1a24b4eca48e7e9a3b6835f114bac",
+        "component:metadata/FOUNDATION.json": "e9e33246485a7c63a14a9a8f364d862bac27dcd144cbf94efab8f33c6090ba7d",
+        "component:metadata/SOURCE_RECORD.json": "01bdd4bb6dd932fe4ad8b2423d0c241305ac1548bcca8c7d75ed53231fcfdb7c"
+      }
+    },
+    {
+      "id": "component:concepts/measuring-information.md",
+      "path": "concepts/measuring-information.md",
+      "type": "concepts",
+      "chapter": "measuring-information",
+      "hash": "2b5ec887e3cd4736967d769db28e27dab0542f1c311c30bb58c77b844c306eec",
+      "dependencies": {
+        "component:alembic.json": "4abac7c4b999d6140f511da30bf21290e8c1a24b4eca48e7e9a3b6835f114bac",
+        "component:concepts/course.md": "37f58fd03f12963c7d08d83327ab6eaee4d349d584ac019cfa87c3f63fc6162b",
+        "component:metadata/FOUNDATION.json": "e9e33246485a7c63a14a9a8f364d862bac27dcd144cbf94efab8f33c6090ba7d",
+        "component:metadata/SOURCE_RECORD.json": "01bdd4bb6dd932fe4ad8b2423d0c241305ac1548bcca8c7d75ed53231fcfdb7c"
+      }
+    },
+    {
+      "id": "component:concepts/reliable-codes.md",
+      "path": "concepts/reliable-codes.md",
+      "type": "concepts",
+      "chapter": "reliable-codes",
+      "hash": "93e1bff0ec18cece561acbe0d842fc5e361a33870f4221fe383adceb01b789f2",
+      "dependencies": {
+        "component:alembic.json": "4abac7c4b999d6140f511da30bf21290e8c1a24b4eca48e7e9a3b6835f114bac",
+        "component:concepts/course.md": "37f58fd03f12963c7d08d83327ab6eaee4d349d584ac019cfa87c3f63fc6162b",
+        "component:metadata/FOUNDATION.json": "e9e33246485a7c63a14a9a8f364d862bac27dcd144cbf94efab8f33c6090ba7d",
+        "component:metadata/SOURCE_RECORD.json": "01bdd4bb6dd932fe4ad8b2423d0c241305ac1548bcca8c7d75ed53231fcfdb7c"
+      }
+    },
+    {
+      "id": "component:LICENSE",
+      "path": "LICENSE",
+      "type": "license",
+      "chapter": null,
+      "hash": "23ee78c8bae49cf08ea2f0c84945c66b987ebe4520881fb51b3dad4fb43d07c2",
+      "dependencies": {
+        "component:alembic.json": "4abac7c4b999d6140f511da30bf21290e8c1a24b4eca48e7e9a3b6835f114bac",
+        "component:metadata/FOUNDATION.json": "e9e33246485a7c63a14a9a8f364d862bac27dcd144cbf94efab8f33c6090ba7d"
+      }
+    },
+    {
+      "id": "component:metadata/ATTRIBUTION.md",
+      "path": "metadata/ATTRIBUTION.md",
+      "type": "attribution",
+      "chapter": null,
+      "hash": "62ce5d341b0f4b6fd6ea455754141bf0c5f0d6fad9aabddb890c5a2a445991d6",
+      "dependencies": {
+        "component:alembic.json": "4abac7c4b999d6140f511da30bf21290e8c1a24b4eca48e7e9a3b6835f114bac",
+        "component:assets/capacity-boundary.svg": "521cea66d2dd9d39b6eddb70642fb6a2064bd5e693f112c707350599e3912338",
+        "component:assets/golden-record.jpg": "16de4e62339b31017438237d3324560f3611fae2dc6ce19df4fb8e96e2655878",
+        "component:assets/goldstone-antenna.jpg": "7d2e414851977038d44d5f0a21a26a4152e54d2127dcc11b42472d988dbaccde",
+        "component:assets/hamming-space.svg": "654af91d74fba34a3eb6234efd9593e36bd5a25db5cb72e315f14cb225480f06",
+        "component:assets/mutual-information.svg": "d7c97e1f25e1e36e374b5d3fe77784b357940f3443e65c62be2e83adc3490b79",
+        "component:assets/noisy-channel.svg": "ae039acb2eef9cb7c917dfb13e5ee43b8dfd817c99cc6908952f54a0f0cd78d1",
+        "component:assets/surprise-entropy.svg": "808c76f1394643ee26433de7656101da35b5a1d209bab5902ea9f1ef701f4dc5",
+        "component:assets/syndrome-decoding.svg": "60bf47d65d8f00afe4647e5b46827319f9534e4c5e552b69c06d771f49c8f10f",
+        "component:metadata/FOUNDATION.json": "e9e33246485a7c63a14a9a8f364d862bac27dcd144cbf94efab8f33c6090ba7d",
+        "component:metadata/PROVENANCE.json": "91164bbc127f370058f3611dc772669cc2b5d8ee8b2c29e878349198390249b1"
+      }
+    },
+    {
+      "id": "component:metadata/evidence/media-photo-golden-record.html",
+      "path": "metadata/evidence/media-photo-golden-record.html",
+      "type": "support",
+      "chapter": null,
+      "hash": "959d023e2b82661bb6cabda3e44c7e59fe3d780591de5aac2c352a78d5b4951d",
+      "dependencies": {
+        "component:metadata/FOUNDATION.json": "e9e33246485a7c63a14a9a8f364d862bac27dcd144cbf94efab8f33c6090ba7d"
+      }
+    },
+    {
+      "id": "component:metadata/evidence/media-photo-goldstone-antenna.html",
+      "path": "metadata/evidence/media-photo-goldstone-antenna.html",
+      "type": "support",
+      "chapter": null,
+      "hash": "e95aa10300e7416067eb762253cccc802e21783afb7ead95c3a0fee8ff436410",
+      "dependencies": {
+        "component:metadata/FOUNDATION.json": "e9e33246485a7c63a14a9a8f364d862bac27dcd144cbf94efab8f33c6090ba7d"
+      }
+    },
+    {
+      "id": "component:metadata/evidence/wikipedia-information-theory.html",
+      "path": "metadata/evidence/wikipedia-information-theory.html",
+      "type": "support",
+      "chapter": null,
+      "hash": "fc76a0277b4ab7c623a3bbcfd323393dc1a36ddcba39aaf2506552448f251714",
+      "dependencies": {
+        "component:metadata/FOUNDATION.json": "e9e33246485a7c63a14a9a8f364d862bac27dcd144cbf94efab8f33c6090ba7d"
+      }
+    },
+    {
+      "id": "component:metadata/FOUNDATION.json",
+      "path": "metadata/FOUNDATION.json",
+      "type": "foundation",
+      "chapter": null,
+      "hash": "e9e33246485a7c63a14a9a8f364d862bac27dcd144cbf94efab8f33c6090ba7d",
+      "dependencies": {}
+    },
+    {
+      "id": "component:metadata/KEY_FACT_REVIEW.json",
+      "path": "metadata/KEY_FACT_REVIEW.json",
+      "type": "review",
+      "chapter": null,
+      "hash": "f3f8211ea85153f8a61674dec486d2a97405efe562bc402dd96ba2f91b56c10f",
+      "dependencies": {
+        "component:alembic.json": "4abac7c4b999d6140f511da30bf21290e8c1a24b4eca48e7e9a3b6835f114bac",
+        "component:assessment-support/measuring-information.md": "2f4296653835494d4e5912be1167fec763cfec08a855623e3a6f011945a67f9a",
+        "component:assessment-support/reliable-codes.md": "74bed0e558fd495adbd571fc13f5a25fe95322abfde1ea22cb6d1bea5024b3f8",
+        "component:concepts/course.md": "37f58fd03f12963c7d08d83327ab6eaee4d349d584ac019cfa87c3f63fc6162b",
+        "component:concepts/measuring-information.md": "2b5ec887e3cd4736967d769db28e27dab0542f1c311c30bb58c77b844c306eec",
+        "component:concepts/reliable-codes.md": "93e1bff0ec18cece561acbe0d842fc5e361a33870f4221fe383adceb01b789f2",
+        "component:LICENSE": "23ee78c8bae49cf08ea2f0c84945c66b987ebe4520881fb51b3dad4fb43d07c2",
+        "component:metadata/ATTRIBUTION.md": "62ce5d341b0f4b6fd6ea455754141bf0c5f0d6fad9aabddb890c5a2a445991d6",
+        "component:metadata/FOUNDATION.json": "e9e33246485a7c63a14a9a8f364d862bac27dcd144cbf94efab8f33c6090ba7d",
+        "component:metadata/PROVENANCE.json": "91164bbc127f370058f3611dc772669cc2b5d8ee8b2c29e878349198390249b1",
+        "component:metadata/SOURCE_RECORD.json": "01bdd4bb6dd932fe4ad8b2423d0c241305ac1548bcca8c7d75ed53231fcfdb7c",
+        "component:practice/measuring-information.md": "4792738a8dd6e0d7c692c8bad754ae9f0456ce01ba003273511940c34b46fca5",
+        "component:practice/reliable-codes.md": "f30302b85016a0cc2509e39c093f47a3042c04d0a9f2afda21dba3836bb17bfb",
+        "component:slides/measuring-information.md": "39d16c1f6b1c062094a513a4f314fbbcaac40745638bb96030aaee8a788140ad",
+        "component:slides/reliable-codes.md": "d55e489f893ab49025a7775b6ba194927990fdba48e08d083c31dacb93f2ffb4",
+        "component:study-guide/measuring-information.md": "1df63eb54f1932c5ecd830e141abde889b2fa7db4d0911d903fb0ecb394d294d",
+        "component:study-guide/reliable-codes.md": "7e3e3f4189d024e032c5fdf07898f7295b255c941bad6f55e989897ac9f3173d"
+      }
+    },
+    {
+      "id": "component:metadata/MEDIA_PLAN.json",
+      "path": "metadata/MEDIA_PLAN.json",
+      "type": "support",
+      "chapter": null,
+      "hash": "56c2f6dd1cec8628ac635ea6a1e463288230c782b3c8992528b68ff224d22492",
+      "dependencies": {
+        "component:metadata/FOUNDATION.json": "e9e33246485a7c63a14a9a8f364d862bac27dcd144cbf94efab8f33c6090ba7d"
+      }
+    },
+    {
+      "id": "component:metadata/preflight/wikipedia-channel-capacity.json",
+      "path": "metadata/preflight/wikipedia-channel-capacity.json",
+      "type": "support",
+      "chapter": null,
+      "hash": "71332097c27dcc623a290f51cabac2624773732a1f29fd18985416d57ee9ecda",
+      "dependencies": {
+        "component:metadata/FOUNDATION.json": "e9e33246485a7c63a14a9a8f364d862bac27dcd144cbf94efab8f33c6090ba7d"
+      }
+    },
+    {
+      "id": "component:metadata/preflight/wikipedia-entropy-information-theory.json",
+      "path": "metadata/preflight/wikipedia-entropy-information-theory.json",
+      "type": "support",
+      "chapter": null,
+      "hash": "afd1a17836faa85711a6351dd80c39aa252c3519b4fda5dd323b9bab79096220",
+      "dependencies": {
+        "component:metadata/FOUNDATION.json": "e9e33246485a7c63a14a9a8f364d862bac27dcd144cbf94efab8f33c6090ba7d"
+      }
+    },
+    {
+      "id": "component:metadata/preflight/wikipedia-error-correction-code.json",
+      "path": "metadata/preflight/wikipedia-error-correction-code.json",
+      "type": "support",
+      "chapter": null,
+      "hash": "f7323548225474250b08ac76b1b2439f10c282cd80377e584f9bf4d7f73717b9",
+      "dependencies": {
+        "component:metadata/FOUNDATION.json": "e9e33246485a7c63a14a9a8f364d862bac27dcd144cbf94efab8f33c6090ba7d"
+      }
+    },
+    {
+      "id": "component:metadata/preflight/wikipedia-hamming-code.json",
+      "path": "metadata/preflight/wikipedia-hamming-code.json",
+      "type": "support",
+      "chapter": null,
+      "hash": "d2d2211944e6ce6551eca296dcfd3881655f952af7a5da7fe078394ad82c4922",
+      "dependencies": {
+        "component:metadata/FOUNDATION.json": "e9e33246485a7c63a14a9a8f364d862bac27dcd144cbf94efab8f33c6090ba7d"
+      }
+    },
+    {
+      "id": "component:metadata/preflight/wikipedia-information-theory.json",
+      "path": "metadata/preflight/wikipedia-information-theory.json",
+      "type": "support",
+      "chapter": null,
+      "hash": "e847f9d8b0551253b2af07ba4b5ac0cfb49e4e3852c40fb637b66f69307f0e62",
+      "dependencies": {
+        "component:metadata/FOUNDATION.json": "e9e33246485a7c63a14a9a8f364d862bac27dcd144cbf94efab8f33c6090ba7d"
+      }
+    },
+    {
+      "id": "component:metadata/preflight/wikipedia-mutual-information.json",
+      "path": "metadata/preflight/wikipedia-mutual-information.json",
+      "type": "support",
+      "chapter": null,
+      "hash": "e3030d0087f76ffbdc0b5fbf114c74311b802f9950637df41924b467fcc7f600",
+      "dependencies": {
+        "component:metadata/FOUNDATION.json": "e9e33246485a7c63a14a9a8f364d862bac27dcd144cbf94efab8f33c6090ba7d"
+      }
+    },
+    {
+      "id": "component:metadata/preflight/wikipedia-noisy-channel-coding-theorem.json",
+      "path": "metadata/preflight/wikipedia-noisy-channel-coding-theorem.json",
+      "type": "support",
+      "chapter": null,
+      "hash": "51ac01b2fef32e1a0bce637875caf678ac8a0aa2711a2ed8cbd4dfcfb21f2971",
+      "dependencies": {
+        "component:metadata/FOUNDATION.json": "e9e33246485a7c63a14a9a8f364d862bac27dcd144cbf94efab8f33c6090ba7d"
+      }
+    },
+    {
+      "id": "component:metadata/PRESENTATION.json",
+      "path": "metadata/PRESENTATION.json",
+      "type": "support",
+      "chapter": null,
+      "hash": "e81846609aa164c8bd7c678ff5c414ce927255c35640c2678ccf7ab881b299e3",
+      "dependencies": {
+        "component:metadata/FOUNDATION.json": "e9e33246485a7c63a14a9a8f364d862bac27dcd144cbf94efab8f33c6090ba7d"
+      }
+    },
+    {
+      "id": "component:metadata/PROVENANCE.json",
+      "path": "metadata/PROVENANCE.json",
+      "type": "provenance",
+      "chapter": null,
+      "hash": "91164bbc127f370058f3611dc772669cc2b5d8ee8b2c29e878349198390249b1",
+      "dependencies": {
+        "component:metadata/FOUNDATION.json": "e9e33246485a7c63a14a9a8f364d862bac27dcd144cbf94efab8f33c6090ba7d"
+      }
+    },
+    {
+      "id": "component:metadata/SOURCE_RECORD.json",
+      "path": "metadata/SOURCE_RECORD.json",
+      "type": "source-record",
+      "chapter": null,
+      "hash": "01bdd4bb6dd932fe4ad8b2423d0c241305ac1548bcca8c7d75ed53231fcfdb7c",
+      "dependencies": {
+        "component:metadata/FOUNDATION.json": "e9e33246485a7c63a14a9a8f364d862bac27dcd144cbf94efab8f33c6090ba7d"
+      }
+    },
+    {
+      "id": "component:metadata/VISUAL_REVIEW.json",
+      "path": "metadata/VISUAL_REVIEW.json",
+      "type": "review",
+      "chapter": null,
+      "hash": "329d5416ba1c98e67d510db5d4f5a8e4e79a9213ffea04d4e3fd8ce7a1b10314",
+      "dependencies": {
+        "component:assets/capacity-boundary.svg": "521cea66d2dd9d39b6eddb70642fb6a2064bd5e693f112c707350599e3912338",
+        "component:assets/golden-record.jpg": "16de4e62339b31017438237d3324560f3611fae2dc6ce19df4fb8e96e2655878",
+        "component:assets/goldstone-antenna.jpg": "7d2e414851977038d44d5f0a21a26a4152e54d2127dcc11b42472d988dbaccde",
+        "component:assets/hamming-space.svg": "654af91d74fba34a3eb6234efd9593e36bd5a25db5cb72e315f14cb225480f06",
+        "component:assets/mutual-information.svg": "d7c97e1f25e1e36e374b5d3fe77784b357940f3443e65c62be2e83adc3490b79",
+        "component:assets/noisy-channel.svg": "ae039acb2eef9cb7c917dfb13e5ee43b8dfd817c99cc6908952f54a0f0cd78d1",
+        "component:assets/surprise-entropy.svg": "808c76f1394643ee26433de7656101da35b5a1d209bab5902ea9f1ef701f4dc5",
+        "component:assets/syndrome-decoding.svg": "60bf47d65d8f00afe4647e5b46827319f9534e4c5e552b69c06d771f49c8f10f",
+        "component:metadata/FOUNDATION.json": "e9e33246485a7c63a14a9a8f364d862bac27dcd144cbf94efab8f33c6090ba7d",
+        "component:practice/measuring-information.md": "4792738a8dd6e0d7c692c8bad754ae9f0456ce01ba003273511940c34b46fca5",
+        "component:practice/reliable-codes.md": "f30302b85016a0cc2509e39c093f47a3042c04d0a9f2afda21dba3836bb17bfb",
+        "component:slides/measuring-information.md": "39d16c1f6b1c062094a513a4f314fbbcaac40745638bb96030aaee8a788140ad",
+        "component:slides/reliable-codes.md": "d55e489f893ab49025a7775b6ba194927990fdba48e08d083c31dacb93f2ffb4",
+        "component:study-guide/measuring-information.md": "1df63eb54f1932c5ecd830e141abde889b2fa7db4d0911d903fb0ecb394d294d",
+        "component:study-guide/reliable-codes.md": "7e3e3f4189d024e032c5fdf07898f7295b255c941bad6f55e989897ac9f3173d"
+      }
+    },
+    {
+      "id": "component:practice/measuring-information.md",
+      "path": "practice/measuring-information.md",
+      "type": "practice",
+      "chapter": "measuring-information",
+      "hash": "4792738a8dd6e0d7c692c8bad754ae9f0456ce01ba003273511940c34b46fca5",
+      "dependencies": {
+        "component:alembic.json": "4abac7c4b999d6140f511da30bf21290e8c1a24b4eca48e7e9a3b6835f114bac",
+        "component:assessment-support/measuring-information.md": "2f4296653835494d4e5912be1167fec763cfec08a855623e3a6f011945a67f9a",
+        "component:metadata/FOUNDATION.json": "e9e33246485a7c63a14a9a8f364d862bac27dcd144cbf94efab8f33c6090ba7d",
+        "component:metadata/SOURCE_RECORD.json": "01bdd4bb6dd932fe4ad8b2423d0c241305ac1548bcca8c7d75ed53231fcfdb7c",
+        "component:study-guide/measuring-information.md": "1df63eb54f1932c5ecd830e141abde889b2fa7db4d0911d903fb0ecb394d294d"
+      }
+    },
+    {
+      "id": "component:practice/reliable-codes.md",
+      "path": "practice/reliable-codes.md",
+      "type": "practice",
+      "chapter": "reliable-codes",
+      "hash": "f30302b85016a0cc2509e39c093f47a3042c04d0a9f2afda21dba3836bb17bfb",
+      "dependencies": {
+        "component:alembic.json": "4abac7c4b999d6140f511da30bf21290e8c1a24b4eca48e7e9a3b6835f114bac",
+        "component:assessment-support/reliable-codes.md": "74bed0e558fd495adbd571fc13f5a25fe95322abfde1ea22cb6d1bea5024b3f8",
+        "component:metadata/FOUNDATION.json": "e9e33246485a7c63a14a9a8f364d862bac27dcd144cbf94efab8f33c6090ba7d",
+        "component:metadata/SOURCE_RECORD.json": "01bdd4bb6dd932fe4ad8b2423d0c241305ac1548bcca8c7d75ed53231fcfdb7c",
+        "component:study-guide/reliable-codes.md": "7e3e3f4189d024e032c5fdf07898f7295b255c941bad6f55e989897ac9f3173d"
+      }
+    },
+    {
+      "id": "component:README.md",
+      "path": "README.md",
+      "type": "readme",
+      "chapter": null,
+      "hash": "ba44f9dd642128e1871d7e41816239f1bc4c3d9a8b2645c0b3a85ab14cda471e",
+      "dependencies": {
+        "component:alembic.json": "4abac7c4b999d6140f511da30bf21290e8c1a24b4eca48e7e9a3b6835f114bac",
+        "component:metadata/FOUNDATION.json": "e9e33246485a7c63a14a9a8f364d862bac27dcd144cbf94efab8f33c6090ba7d"
+      }
+    },
+    {
+      "id": "component:slides/measuring-information.md",
+      "path": "slides/measuring-information.md",
+      "type": "slides",
+      "chapter": "measuring-information",
+      "hash": "39d16c1f6b1c062094a513a4f314fbbcaac40745638bb96030aaee8a788140ad",
+      "dependencies": {
+        "component:alembic.json": "4abac7c4b999d6140f511da30bf21290e8c1a24b4eca48e7e9a3b6835f114bac",
+        "component:assets/capacity-boundary.svg": "521cea66d2dd9d39b6eddb70642fb6a2064bd5e693f112c707350599e3912338",
+        "component:assets/goldstone-antenna.jpg": "7d2e414851977038d44d5f0a21a26a4152e54d2127dcc11b42472d988dbaccde",
+        "component:assets/mutual-information.svg": "d7c97e1f25e1e36e374b5d3fe77784b357940f3443e65c62be2e83adc3490b79",
+        "component:assets/noisy-channel.svg": "ae039acb2eef9cb7c917dfb13e5ee43b8dfd817c99cc6908952f54a0f0cd78d1",
+        "component:assets/surprise-entropy.svg": "808c76f1394643ee26433de7656101da35b5a1d209bab5902ea9f1ef701f4dc5",
+        "component:metadata/FOUNDATION.json": "e9e33246485a7c63a14a9a8f364d862bac27dcd144cbf94efab8f33c6090ba7d",
+        "component:metadata/PROVENANCE.json": "91164bbc127f370058f3611dc772669cc2b5d8ee8b2c29e878349198390249b1",
+        "component:metadata/SOURCE_RECORD.json": "01bdd4bb6dd932fe4ad8b2423d0c241305ac1548bcca8c7d75ed53231fcfdb7c",
+        "component:study-guide/measuring-information.md": "1df63eb54f1932c5ecd830e141abde889b2fa7db4d0911d903fb0ecb394d294d"
+      }
+    },
+    {
+      "id": "component:slides/reliable-codes.md",
+      "path": "slides/reliable-codes.md",
+      "type": "slides",
+      "chapter": "reliable-codes",
+      "hash": "d55e489f893ab49025a7775b6ba194927990fdba48e08d083c31dacb93f2ffb4",
+      "dependencies": {
+        "component:alembic.json": "4abac7c4b999d6140f511da30bf21290e8c1a24b4eca48e7e9a3b6835f114bac",
+        "component:assets/golden-record.jpg": "16de4e62339b31017438237d3324560f3611fae2dc6ce19df4fb8e96e2655878",
+        "component:assets/hamming-space.svg": "654af91d74fba34a3eb6234efd9593e36bd5a25db5cb72e315f14cb225480f06",
+        "component:assets/syndrome-decoding.svg": "60bf47d65d8f00afe4647e5b46827319f9534e4c5e552b69c06d771f49c8f10f",
+        "component:metadata/FOUNDATION.json": "e9e33246485a7c63a14a9a8f364d862bac27dcd144cbf94efab8f33c6090ba7d",
+        "component:metadata/PROVENANCE.json": "91164bbc127f370058f3611dc772669cc2b5d8ee8b2c29e878349198390249b1",
+        "component:metadata/SOURCE_RECORD.json": "01bdd4bb6dd932fe4ad8b2423d0c241305ac1548bcca8c7d75ed53231fcfdb7c",
+        "component:study-guide/reliable-codes.md": "7e3e3f4189d024e032c5fdf07898f7295b255c941bad6f55e989897ac9f3173d"
+      }
+    },
+    {
+      "id": "component:study-guide/measuring-information.md",
+      "path": "study-guide/measuring-information.md",
+      "type": "study-guide",
+      "chapter": "measuring-information",
+      "hash": "1df63eb54f1932c5ecd830e141abde889b2fa7db4d0911d903fb0ecb394d294d",
+      "dependencies": {
+        "component:alembic.json": "4abac7c4b999d6140f511da30bf21290e8c1a24b4eca48e7e9a3b6835f114bac",
+        "component:assets/capacity-boundary.svg": "521cea66d2dd9d39b6eddb70642fb6a2064bd5e693f112c707350599e3912338",
+        "component:assets/goldstone-antenna.jpg": "7d2e414851977038d44d5f0a21a26a4152e54d2127dcc11b42472d988dbaccde",
+        "component:assets/mutual-information.svg": "d7c97e1f25e1e36e374b5d3fe77784b357940f3443e65c62be2e83adc3490b79",
+        "component:assets/noisy-channel.svg": "ae039acb2eef9cb7c917dfb13e5ee43b8dfd817c99cc6908952f54a0f0cd78d1",
+        "component:assets/surprise-entropy.svg": "808c76f1394643ee26433de7656101da35b5a1d209bab5902ea9f1ef701f4dc5",
+        "component:concepts/measuring-information.md": "2b5ec887e3cd4736967d769db28e27dab0542f1c311c30bb58c77b844c306eec",
+        "component:metadata/FOUNDATION.json": "e9e33246485a7c63a14a9a8f364d862bac27dcd144cbf94efab8f33c6090ba7d",
+        "component:metadata/PROVENANCE.json": "91164bbc127f370058f3611dc772669cc2b5d8ee8b2c29e878349198390249b1",
+        "component:metadata/SOURCE_RECORD.json": "01bdd4bb6dd932fe4ad8b2423d0c241305ac1548bcca8c7d75ed53231fcfdb7c"
+      }
+    },
+    {
+      "id": "component:study-guide/reliable-codes.md",
+      "path": "study-guide/reliable-codes.md",
+      "type": "study-guide",
+      "chapter": "reliable-codes",
+      "hash": "7e3e3f4189d024e032c5fdf07898f7295b255c941bad6f55e989897ac9f3173d",
+      "dependencies": {
+        "component:alembic.json": "4abac7c4b999d6140f511da30bf21290e8c1a24b4eca48e7e9a3b6835f114bac",
+        "component:assets/golden-record.jpg": "16de4e62339b31017438237d3324560f3611fae2dc6ce19df4fb8e96e2655878",
+        "component:assets/hamming-space.svg": "654af91d74fba34a3eb6234efd9593e36bd5a25db5cb72e315f14cb225480f06",
+        "component:assets/syndrome-decoding.svg": "60bf47d65d8f00afe4647e5b46827319f9534e4c5e552b69c06d771f49c8f10f",
+        "component:concepts/reliable-codes.md": "93e1bff0ec18cece561acbe0d842fc5e361a33870f4221fe383adceb01b789f2",
+        "component:metadata/FOUNDATION.json": "e9e33246485a7c63a14a9a8f364d862bac27dcd144cbf94efab8f33c6090ba7d",
+        "component:metadata/PROVENANCE.json": "91164bbc127f370058f3611dc772669cc2b5d8ee8b2c29e878349198390249b1",
+        "component:metadata/SOURCE_RECORD.json": "01bdd4bb6dd932fe4ad8b2423d0c241305ac1548bcca8c7d75ed53231fcfdb7c"
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "from": "component:alembic.json",
+      "to": "component:assessment-support/measuring-information.md",
+      "reason": "manifest identity/scope/license constrains component"
+    },
+    {
+      "from": "component:alembic.json",
+      "to": "component:assessment-support/reliable-codes.md",
+      "reason": "manifest identity/scope/license constrains component"
+    },
+    {
+      "from": "component:alembic.json",
+      "to": "component:concepts/course.md",
+      "reason": "manifest identity/scope/license constrains component"
+    },
+    {
+      "from": "component:alembic.json",
+      "to": "component:concepts/measuring-information.md",
+      "reason": "manifest identity/scope/license constrains component"
+    },
+    {
+      "from": "component:alembic.json",
+      "to": "component:concepts/reliable-codes.md",
+      "reason": "manifest identity/scope/license constrains component"
+    },
+    {
+      "from": "component:alembic.json",
+      "to": "component:LICENSE",
+      "reason": "manifest identity/scope/license constrains component"
+    },
+    {
+      "from": "component:alembic.json",
+      "to": "component:metadata/ATTRIBUTION.md",
+      "reason": "manifest identity/scope/license constrains component"
+    },
+    {
+      "from": "component:alembic.json",
+      "to": "component:metadata/KEY_FACT_REVIEW.json",
+      "reason": "output-license declaration is rechecked in the key-fact critique"
+    },
+    {
+      "from": "component:alembic.json",
+      "to": "component:practice/measuring-information.md",
+      "reason": "manifest identity/scope/license constrains component"
+    },
+    {
+      "from": "component:alembic.json",
+      "to": "component:practice/reliable-codes.md",
+      "reason": "manifest identity/scope/license constrains component"
+    },
+    {
+      "from": "component:alembic.json",
+      "to": "component:README.md",
+      "reason": "manifest identity/scope/license constrains component"
+    },
+    {
+      "from": "component:alembic.json",
+      "to": "component:slides/measuring-information.md",
+      "reason": "manifest identity/scope/license constrains component"
+    },
+    {
+      "from": "component:alembic.json",
+      "to": "component:slides/reliable-codes.md",
+      "reason": "manifest identity/scope/license constrains component"
+    },
+    {
+      "from": "component:alembic.json",
+      "to": "component:study-guide/measuring-information.md",
+      "reason": "manifest identity/scope/license constrains component"
+    },
+    {
+      "from": "component:alembic.json",
+      "to": "component:study-guide/reliable-codes.md",
+      "reason": "manifest identity/scope/license constrains component"
+    },
+    {
+      "from": "component:assessment-support/measuring-information.md",
+      "to": "component:metadata/KEY_FACT_REVIEW.json",
+      "reason": "teaching content must be rechecked in the key-fact critique"
+    },
+    {
+      "from": "component:assessment-support/measuring-information.md",
+      "to": "component:practice/measuring-information.md",
+      "reason": "practice instantiates assessment design"
+    },
+    {
+      "from": "component:assessment-support/reliable-codes.md",
+      "to": "component:metadata/KEY_FACT_REVIEW.json",
+      "reason": "teaching content must be rechecked in the key-fact critique"
+    },
+    {
+      "from": "component:assessment-support/reliable-codes.md",
+      "to": "component:practice/reliable-codes.md",
+      "reason": "practice instantiates assessment design"
+    },
+    {
+      "from": "component:assets/capacity-boundary.svg",
+      "to": "component:metadata/ATTRIBUTION.md",
+      "reason": "component embeds/references asset"
+    },
+    {
+      "from": "component:assets/capacity-boundary.svg",
+      "to": "component:metadata/VISUAL_REVIEW.json",
+      "reason": "visual asset must be re-reviewed after change"
+    },
+    {
+      "from": "component:assets/capacity-boundary.svg",
+      "to": "component:slides/measuring-information.md",
+      "reason": "component embeds/references asset"
+    },
+    {
+      "from": "component:assets/capacity-boundary.svg",
+      "to": "component:study-guide/measuring-information.md",
+      "reason": "component embeds/references asset"
+    },
+    {
+      "from": "component:assets/golden-record.jpg",
+      "to": "component:metadata/ATTRIBUTION.md",
+      "reason": "component embeds/references asset"
+    },
+    {
+      "from": "component:assets/golden-record.jpg",
+      "to": "component:metadata/VISUAL_REVIEW.json",
+      "reason": "visual asset must be re-reviewed after change"
+    },
+    {
+      "from": "component:assets/golden-record.jpg",
+      "to": "component:slides/reliable-codes.md",
+      "reason": "component embeds/references asset"
+    },
+    {
+      "from": "component:assets/golden-record.jpg",
+      "to": "component:study-guide/reliable-codes.md",
+      "reason": "component embeds/references asset"
+    },
+    {
+      "from": "component:assets/goldstone-antenna.jpg",
+      "to": "component:metadata/ATTRIBUTION.md",
+      "reason": "component embeds/references asset"
+    },
+    {
+      "from": "component:assets/goldstone-antenna.jpg",
+      "to": "component:metadata/VISUAL_REVIEW.json",
+      "reason": "visual asset must be re-reviewed after change"
+    },
+    {
+      "from": "component:assets/goldstone-antenna.jpg",
+      "to": "component:slides/measuring-information.md",
+      "reason": "component embeds/references asset"
+    },
+    {
+      "from": "component:assets/goldstone-antenna.jpg",
+      "to": "component:study-guide/measuring-information.md",
+      "reason": "component embeds/references asset"
+    },
+    {
+      "from": "component:assets/hamming-space.svg",
+      "to": "component:metadata/ATTRIBUTION.md",
+      "reason": "component embeds/references asset"
+    },
+    {
+      "from": "component:assets/hamming-space.svg",
+      "to": "component:metadata/VISUAL_REVIEW.json",
+      "reason": "visual asset must be re-reviewed after change"
+    },
+    {
+      "from": "component:assets/hamming-space.svg",
+      "to": "component:slides/reliable-codes.md",
+      "reason": "component embeds/references asset"
+    },
+    {
+      "from": "component:assets/hamming-space.svg",
+      "to": "component:study-guide/reliable-codes.md",
+      "reason": "component embeds/references asset"
+    },
+    {
+      "from": "component:assets/mutual-information.svg",
+      "to": "component:metadata/ATTRIBUTION.md",
+      "reason": "component embeds/references asset"
+    },
+    {
+      "from": "component:assets/mutual-information.svg",
+      "to": "component:metadata/VISUAL_REVIEW.json",
+      "reason": "visual asset must be re-reviewed after change"
+    },
+    {
+      "from": "component:assets/mutual-information.svg",
+      "to": "component:slides/measuring-information.md",
+      "reason": "component embeds/references asset"
+    },
+    {
+      "from": "component:assets/mutual-information.svg",
+      "to": "component:study-guide/measuring-information.md",
+      "reason": "component embeds/references asset"
+    },
+    {
+      "from": "component:assets/noisy-channel.svg",
+      "to": "component:metadata/ATTRIBUTION.md",
+      "reason": "component embeds/references asset"
+    },
+    {
+      "from": "component:assets/noisy-channel.svg",
+      "to": "component:metadata/VISUAL_REVIEW.json",
+      "reason": "visual asset must be re-reviewed after change"
+    },
+    {
+      "from": "component:assets/noisy-channel.svg",
+      "to": "component:slides/measuring-information.md",
+      "reason": "component embeds/references asset"
+    },
+    {
+      "from": "component:assets/noisy-channel.svg",
+      "to": "component:study-guide/measuring-information.md",
+      "reason": "component embeds/references asset"
+    },
+    {
+      "from": "component:assets/surprise-entropy.svg",
+      "to": "component:metadata/ATTRIBUTION.md",
+      "reason": "component embeds/references asset"
+    },
+    {
+      "from": "component:assets/surprise-entropy.svg",
+      "to": "component:metadata/VISUAL_REVIEW.json",
+      "reason": "visual asset must be re-reviewed after change"
+    },
+    {
+      "from": "component:assets/surprise-entropy.svg",
+      "to": "component:slides/measuring-information.md",
+      "reason": "component embeds/references asset"
+    },
+    {
+      "from": "component:assets/surprise-entropy.svg",
+      "to": "component:study-guide/measuring-information.md",
+      "reason": "component embeds/references asset"
+    },
+    {
+      "from": "component:assets/syndrome-decoding.svg",
+      "to": "component:metadata/ATTRIBUTION.md",
+      "reason": "component embeds/references asset"
+    },
+    {
+      "from": "component:assets/syndrome-decoding.svg",
+      "to": "component:metadata/VISUAL_REVIEW.json",
+      "reason": "visual asset must be re-reviewed after change"
+    },
+    {
+      "from": "component:assets/syndrome-decoding.svg",
+      "to": "component:slides/reliable-codes.md",
+      "reason": "component embeds/references asset"
+    },
+    {
+      "from": "component:assets/syndrome-decoding.svg",
+      "to": "component:study-guide/reliable-codes.md",
+      "reason": "component embeds/references asset"
+    },
+    {
+      "from": "component:concepts/course.md",
+      "to": "component:concepts/measuring-information.md",
+      "reason": "course logic constrains chapter logic"
+    },
+    {
+      "from": "component:concepts/course.md",
+      "to": "component:concepts/reliable-codes.md",
+      "reason": "course logic constrains chapter logic"
+    },
+    {
+      "from": "component:concepts/course.md",
+      "to": "component:metadata/KEY_FACT_REVIEW.json",
+      "reason": "teaching content must be rechecked in the key-fact critique"
+    },
+    {
+      "from": "component:concepts/measuring-information.md",
+      "to": "component:assessment-support/measuring-information.md",
+      "reason": "chapter objectives drive assessment"
+    },
+    {
+      "from": "component:concepts/measuring-information.md",
+      "to": "component:metadata/KEY_FACT_REVIEW.json",
+      "reason": "teaching content must be rechecked in the key-fact critique"
+    },
+    {
+      "from": "component:concepts/measuring-information.md",
+      "to": "component:study-guide/measuring-information.md",
+      "reason": "chapter concepts drive study guide"
+    },
+    {
+      "from": "component:concepts/reliable-codes.md",
+      "to": "component:assessment-support/reliable-codes.md",
+      "reason": "chapter objectives drive assessment"
+    },
+    {
+      "from": "component:concepts/reliable-codes.md",
+      "to": "component:metadata/KEY_FACT_REVIEW.json",
+      "reason": "teaching content must be rechecked in the key-fact critique"
+    },
+    {
+      "from": "component:concepts/reliable-codes.md",
+      "to": "component:study-guide/reliable-codes.md",
+      "reason": "chapter concepts drive study guide"
+    },
+    {
+      "from": "component:LICENSE",
+      "to": "component:metadata/KEY_FACT_REVIEW.json",
+      "reason": "canonical output-license text is rechecked in the key-fact critique"
+    },
+    {
+      "from": "component:metadata/ATTRIBUTION.md",
+      "to": "component:metadata/KEY_FACT_REVIEW.json",
+      "reason": "public attribution obligations are rechecked in the key-fact critique"
+    },
+    {
+      "from": "component:metadata/FOUNDATION.json",
+      "to": "component:alembic.json",
+      "reason": "foundation facts constrain component"
+    },
+    {
+      "from": "component:metadata/FOUNDATION.json",
+      "to": "component:assessment-support/measuring-information.md",
+      "reason": "foundation facts constrain component"
+    },
+    {
+      "from": "component:metadata/FOUNDATION.json",
+      "to": "component:assessment-support/reliable-codes.md",
+      "reason": "foundation facts constrain component"
+    },
+    {
+      "from": "component:metadata/FOUNDATION.json",
+      "to": "component:assets/capacity-boundary.svg",
+      "reason": "foundation facts constrain component"
+    },
+    {
+      "from": "component:metadata/FOUNDATION.json",
+      "to": "component:assets/golden-record.jpg",
+      "reason": "foundation facts constrain component"
+    },
+    {
+      "from": "component:metadata/FOUNDATION.json",
+      "to": "component:assets/goldstone-antenna.jpg",
+      "reason": "foundation facts constrain component"
+    },
+    {
+      "from": "component:metadata/FOUNDATION.json",
+      "to": "component:assets/hamming-space.svg",
+      "reason": "foundation facts constrain component"
+    },
+    {
+      "from": "component:metadata/FOUNDATION.json",
+      "to": "component:assets/mutual-information.svg",
+      "reason": "foundation facts constrain component"
+    },
+    {
+      "from": "component:metadata/FOUNDATION.json",
+      "to": "component:assets/noisy-channel.svg",
+      "reason": "foundation facts constrain component"
+    },
+    {
+      "from": "component:metadata/FOUNDATION.json",
+      "to": "component:assets/surprise-entropy.svg",
+      "reason": "foundation facts constrain component"
+    },
+    {
+      "from": "component:metadata/FOUNDATION.json",
+      "to": "component:assets/syndrome-decoding.svg",
+      "reason": "foundation facts constrain component"
+    },
+    {
+      "from": "component:metadata/FOUNDATION.json",
+      "to": "component:concepts/course.md",
+      "reason": "foundation facts constrain component"
+    },
+    {
+      "from": "component:metadata/FOUNDATION.json",
+      "to": "component:concepts/measuring-information.md",
+      "reason": "foundation facts constrain component"
+    },
+    {
+      "from": "component:metadata/FOUNDATION.json",
+      "to": "component:concepts/reliable-codes.md",
+      "reason": "foundation facts constrain component"
+    },
+    {
+      "from": "component:metadata/FOUNDATION.json",
+      "to": "component:LICENSE",
+      "reason": "foundation facts constrain component"
+    },
+    {
+      "from": "component:metadata/FOUNDATION.json",
+      "to": "component:metadata/ATTRIBUTION.md",
+      "reason": "foundation facts constrain component"
+    },
+    {
+      "from": "component:metadata/FOUNDATION.json",
+      "to": "component:metadata/evidence/media-photo-golden-record.html",
+      "reason": "foundation facts constrain component"
+    },
+    {
+      "from": "component:metadata/FOUNDATION.json",
+      "to": "component:metadata/evidence/media-photo-goldstone-antenna.html",
+      "reason": "foundation facts constrain component"
+    },
+    {
+      "from": "component:metadata/FOUNDATION.json",
+      "to": "component:metadata/evidence/wikipedia-information-theory.html",
+      "reason": "foundation facts constrain component"
+    },
+    {
+      "from": "component:metadata/FOUNDATION.json",
+      "to": "component:metadata/KEY_FACT_REVIEW.json",
+      "reason": "foundation facts constrain component"
+    },
+    {
+      "from": "component:metadata/FOUNDATION.json",
+      "to": "component:metadata/MEDIA_PLAN.json",
+      "reason": "foundation facts constrain component"
+    },
+    {
+      "from": "component:metadata/FOUNDATION.json",
+      "to": "component:metadata/preflight/wikipedia-channel-capacity.json",
+      "reason": "foundation facts constrain component"
+    },
+    {
+      "from": "component:metadata/FOUNDATION.json",
+      "to": "component:metadata/preflight/wikipedia-entropy-information-theory.json",
+      "reason": "foundation facts constrain component"
+    },
+    {
+      "from": "component:metadata/FOUNDATION.json",
+      "to": "component:metadata/preflight/wikipedia-error-correction-code.json",
+      "reason": "foundation facts constrain component"
+    },
+    {
+      "from": "component:metadata/FOUNDATION.json",
+      "to": "component:metadata/preflight/wikipedia-hamming-code.json",
+      "reason": "foundation facts constrain component"
+    },
+    {
+      "from": "component:metadata/FOUNDATION.json",
+      "to": "component:metadata/preflight/wikipedia-information-theory.json",
+      "reason": "foundation facts constrain component"
+    },
+    {
+      "from": "component:metadata/FOUNDATION.json",
+      "to": "component:metadata/preflight/wikipedia-mutual-information.json",
+      "reason": "foundation facts constrain component"
+    },
+    {
+      "from": "component:metadata/FOUNDATION.json",
+      "to": "component:metadata/preflight/wikipedia-noisy-channel-coding-theorem.json",
+      "reason": "foundation facts constrain component"
+    },
+    {
+      "from": "component:metadata/FOUNDATION.json",
+      "to": "component:metadata/PRESENTATION.json",
+      "reason": "foundation facts constrain component"
+    },
+    {
+      "from": "component:metadata/FOUNDATION.json",
+      "to": "component:metadata/PROVENANCE.json",
+      "reason": "foundation facts constrain component"
+    },
+    {
+      "from": "component:metadata/FOUNDATION.json",
+      "to": "component:metadata/SOURCE_RECORD.json",
+      "reason": "foundation facts constrain component"
+    },
+    {
+      "from": "component:metadata/FOUNDATION.json",
+      "to": "component:metadata/VISUAL_REVIEW.json",
+      "reason": "foundation facts constrain component"
+    },
+    {
+      "from": "component:metadata/FOUNDATION.json",
+      "to": "component:practice/measuring-information.md",
+      "reason": "foundation facts constrain component"
+    },
+    {
+      "from": "component:metadata/FOUNDATION.json",
+      "to": "component:practice/reliable-codes.md",
+      "reason": "foundation facts constrain component"
+    },
+    {
+      "from": "component:metadata/FOUNDATION.json",
+      "to": "component:README.md",
+      "reason": "foundation facts constrain component"
+    },
+    {
+      "from": "component:metadata/FOUNDATION.json",
+      "to": "component:slides/measuring-information.md",
+      "reason": "foundation facts constrain component"
+    },
+    {
+      "from": "component:metadata/FOUNDATION.json",
+      "to": "component:slides/reliable-codes.md",
+      "reason": "foundation facts constrain component"
+    },
+    {
+      "from": "component:metadata/FOUNDATION.json",
+      "to": "component:study-guide/measuring-information.md",
+      "reason": "foundation facts constrain component"
+    },
+    {
+      "from": "component:metadata/FOUNDATION.json",
+      "to": "component:study-guide/reliable-codes.md",
+      "reason": "foundation facts constrain component"
+    },
+    {
+      "from": "component:metadata/PROVENANCE.json",
+      "to": "component:metadata/ATTRIBUTION.md",
+      "reason": "human attribution mirrors provenance"
+    },
+    {
+      "from": "component:metadata/PROVENANCE.json",
+      "to": "component:metadata/KEY_FACT_REVIEW.json",
+      "reason": "media provenance is rechecked in the key-fact critique"
+    },
+    {
+      "from": "component:metadata/PROVENANCE.json",
+      "to": "component:slides/measuring-information.md",
+      "reason": "provenance item fig-capacity-boundary constrains incorporating document"
+    },
+    {
+      "from": "component:metadata/PROVENANCE.json",
+      "to": "component:slides/measuring-information.md",
+      "reason": "provenance item fig-mutual-information constrains incorporating document"
+    },
+    {
+      "from": "component:metadata/PROVENANCE.json",
+      "to": "component:slides/measuring-information.md",
+      "reason": "provenance item fig-noisy-channel constrains incorporating document"
+    },
+    {
+      "from": "component:metadata/PROVENANCE.json",
+      "to": "component:slides/measuring-information.md",
+      "reason": "provenance item fig-surprise-entropy constrains incorporating document"
+    },
+    {
+      "from": "component:metadata/PROVENANCE.json",
+      "to": "component:slides/measuring-information.md",
+      "reason": "provenance item photo-goldstone-antenna constrains incorporating document"
+    },
+    {
+      "from": "component:metadata/PROVENANCE.json",
+      "to": "component:slides/reliable-codes.md",
+      "reason": "provenance item fig-hamming-space constrains incorporating document"
+    },
+    {
+      "from": "component:metadata/PROVENANCE.json",
+      "to": "component:slides/reliable-codes.md",
+      "reason": "provenance item fig-syndrome-decoding constrains incorporating document"
+    },
+    {
+      "from": "component:metadata/PROVENANCE.json",
+      "to": "component:slides/reliable-codes.md",
+      "reason": "provenance item photo-golden-record constrains incorporating document"
+    },
+    {
+      "from": "component:metadata/PROVENANCE.json",
+      "to": "component:study-guide/measuring-information.md",
+      "reason": "provenance item fig-capacity-boundary constrains incorporating document"
+    },
+    {
+      "from": "component:metadata/PROVENANCE.json",
+      "to": "component:study-guide/measuring-information.md",
+      "reason": "provenance item fig-mutual-information constrains incorporating document"
+    },
+    {
+      "from": "component:metadata/PROVENANCE.json",
+      "to": "component:study-guide/measuring-information.md",
+      "reason": "provenance item fig-noisy-channel constrains incorporating document"
+    },
+    {
+      "from": "component:metadata/PROVENANCE.json",
+      "to": "component:study-guide/measuring-information.md",
+      "reason": "provenance item fig-surprise-entropy constrains incorporating document"
+    },
+    {
+      "from": "component:metadata/PROVENANCE.json",
+      "to": "component:study-guide/measuring-information.md",
+      "reason": "provenance item photo-goldstone-antenna constrains incorporating document"
+    },
+    {
+      "from": "component:metadata/PROVENANCE.json",
+      "to": "component:study-guide/reliable-codes.md",
+      "reason": "provenance item fig-hamming-space constrains incorporating document"
+    },
+    {
+      "from": "component:metadata/PROVENANCE.json",
+      "to": "component:study-guide/reliable-codes.md",
+      "reason": "provenance item fig-syndrome-decoding constrains incorporating document"
+    },
+    {
+      "from": "component:metadata/PROVENANCE.json",
+      "to": "component:study-guide/reliable-codes.md",
+      "reason": "provenance item photo-golden-record constrains incorporating document"
+    },
+    {
+      "from": "component:metadata/SOURCE_RECORD.json",
+      "to": "component:assessment-support/measuring-information.md",
+      "reason": "revision-bound sources constrain teaching content"
+    },
+    {
+      "from": "component:metadata/SOURCE_RECORD.json",
+      "to": "component:assessment-support/reliable-codes.md",
+      "reason": "revision-bound sources constrain teaching content"
+    },
+    {
+      "from": "component:metadata/SOURCE_RECORD.json",
+      "to": "component:concepts/course.md",
+      "reason": "revision-bound sources constrain teaching content"
+    },
+    {
+      "from": "component:metadata/SOURCE_RECORD.json",
+      "to": "component:concepts/measuring-information.md",
+      "reason": "revision-bound sources constrain teaching content"
+    },
+    {
+      "from": "component:metadata/SOURCE_RECORD.json",
+      "to": "component:concepts/reliable-codes.md",
+      "reason": "revision-bound sources constrain teaching content"
+    },
+    {
+      "from": "component:metadata/SOURCE_RECORD.json",
+      "to": "component:metadata/KEY_FACT_REVIEW.json",
+      "reason": "source revisions are rechecked in the key-fact critique"
+    },
+    {
+      "from": "component:metadata/SOURCE_RECORD.json",
+      "to": "component:practice/measuring-information.md",
+      "reason": "revision-bound sources constrain teaching content"
+    },
+    {
+      "from": "component:metadata/SOURCE_RECORD.json",
+      "to": "component:practice/reliable-codes.md",
+      "reason": "revision-bound sources constrain teaching content"
+    },
+    {
+      "from": "component:metadata/SOURCE_RECORD.json",
+      "to": "component:slides/measuring-information.md",
+      "reason": "revision-bound sources constrain teaching content"
+    },
+    {
+      "from": "component:metadata/SOURCE_RECORD.json",
+      "to": "component:slides/reliable-codes.md",
+      "reason": "revision-bound sources constrain teaching content"
+    },
+    {
+      "from": "component:metadata/SOURCE_RECORD.json",
+      "to": "component:study-guide/measuring-information.md",
+      "reason": "revision-bound sources constrain teaching content"
+    },
+    {
+      "from": "component:metadata/SOURCE_RECORD.json",
+      "to": "component:study-guide/reliable-codes.md",
+      "reason": "revision-bound sources constrain teaching content"
+    },
+    {
+      "from": "component:practice/measuring-information.md",
+      "to": "component:metadata/KEY_FACT_REVIEW.json",
+      "reason": "teaching content must be rechecked in the key-fact critique"
+    },
+    {
+      "from": "component:practice/measuring-information.md",
+      "to": "component:metadata/VISUAL_REVIEW.json",
+      "reason": "carrier source must be visually re-reviewed after change"
+    },
+    {
+      "from": "component:practice/reliable-codes.md",
+      "to": "component:metadata/KEY_FACT_REVIEW.json",
+      "reason": "teaching content must be rechecked in the key-fact critique"
+    },
+    {
+      "from": "component:practice/reliable-codes.md",
+      "to": "component:metadata/VISUAL_REVIEW.json",
+      "reason": "carrier source must be visually re-reviewed after change"
+    },
+    {
+      "from": "component:slides/measuring-information.md",
+      "to": "component:metadata/KEY_FACT_REVIEW.json",
+      "reason": "teaching content must be rechecked in the key-fact critique"
+    },
+    {
+      "from": "component:slides/measuring-information.md",
+      "to": "component:metadata/VISUAL_REVIEW.json",
+      "reason": "carrier source must be visually re-reviewed after change"
+    },
+    {
+      "from": "component:slides/reliable-codes.md",
+      "to": "component:metadata/KEY_FACT_REVIEW.json",
+      "reason": "teaching content must be rechecked in the key-fact critique"
+    },
+    {
+      "from": "component:slides/reliable-codes.md",
+      "to": "component:metadata/VISUAL_REVIEW.json",
+      "reason": "carrier source must be visually re-reviewed after change"
+    },
+    {
+      "from": "component:study-guide/measuring-information.md",
+      "to": "component:assessment-support/measuring-information.md",
+      "reason": "terminology/examples constrain assessment"
+    },
+    {
+      "from": "component:study-guide/measuring-information.md",
+      "to": "component:metadata/KEY_FACT_REVIEW.json",
+      "reason": "teaching content must be rechecked in the key-fact critique"
+    },
+    {
+      "from": "component:study-guide/measuring-information.md",
+      "to": "component:metadata/VISUAL_REVIEW.json",
+      "reason": "carrier source must be visually re-reviewed after change"
+    },
+    {
+      "from": "component:study-guide/measuring-information.md",
+      "to": "component:practice/measuring-information.md",
+      "reason": "practice must remain consistent with teaching content"
+    },
+    {
+      "from": "component:study-guide/measuring-information.md",
+      "to": "component:slides/measuring-information.md",
+      "reason": "slides derive from study guide"
+    },
+    {
+      "from": "component:study-guide/reliable-codes.md",
+      "to": "component:assessment-support/reliable-codes.md",
+      "reason": "terminology/examples constrain assessment"
+    },
+    {
+      "from": "component:study-guide/reliable-codes.md",
+      "to": "component:metadata/KEY_FACT_REVIEW.json",
+      "reason": "teaching content must be rechecked in the key-fact critique"
+    },
+    {
+      "from": "component:study-guide/reliable-codes.md",
+      "to": "component:metadata/VISUAL_REVIEW.json",
+      "reason": "carrier source must be visually re-reviewed after change"
+    },
+    {
+      "from": "component:study-guide/reliable-codes.md",
+      "to": "component:practice/reliable-codes.md",
+      "reason": "practice must remain consistent with teaching content"
+    },
+    {
+      "from": "component:study-guide/reliable-codes.md",
+      "to": "component:slides/reliable-codes.md",
+      "reason": "slides derive from study guide"
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "photo-goldstone-antenna",
+      "type": "image",
+      "mediaKind": "photo",
+      "localPath": "assets/goldstone-antenna.jpg",
+      "usedIn": [
+        "study-guide/measuring-information.md",
+        "slides/measuring-information.md"
+      ],
+      "title": "Goldstone Deep Space Network 70-metre antenna",
+      "creator": "NASA/JPL",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Goldstone_DSN_antenna.jpg",
+      "license": "Public domain",
+      "attribution": "NASA/JPL, 70-metre antenna at Goldstone Deep Space Communications Complex, via Wikimedia Commons; U.S. federal government work, public domain; used without modification.",
+      "provenanceStatus": "verified",
+      "publicationStatus": "cleared",
+      "blockReason": null,
+      "rightsEvidence": {
+        "evidenceType": "official-media-description-page",
+        "evidenceUrl": "https://commons.wikimedia.org/wiki/File:Goldstone_DSN_antenna.jpg",
+        "verifiedAt": "2026-07-14",
+        "evidenceSnapshot": "metadata/evidence/media-photo-goldstone-antenna.html",
+        "evidenceSha256": "e95aa10300e7416067eb762253cccc802e21783afb7ead95c3a0fee8ff436410",
+        "evidenceRetrieval": {
+          "captureMode": "network",
+          "requestedUrl": "https://commons.wikimedia.org/wiki/File:Goldstone_DSN_antenna.jpg",
+          "finalUrl": "https://commons.wikimedia.org/wiki/File:Goldstone_DSN_antenna.jpg",
+          "redirectChain": [],
+          "retrievedAt": "2026-07-14T16:11:49.064Z",
+          "httpStatus": 200,
+          "contentType": "text/html; charset=UTF-8",
+          "byteLength": 90907,
+          "tool": {
+            "name": "coursewerk",
+            "version": "v0.11.0"
+          }
+        },
+        "evidenceCapture": {
+          "operator": {
+            "type": "automation",
+            "name": "Coursewerk Demo Builder"
+          },
+          "capturedAt": "2026-07-14T16:11:49.064Z",
+          "tool": {
+            "name": "coursewerk",
+            "version": "v0.11.0"
+          }
+        }
+      }
+    },
+    {
+      "id": "photo-golden-record",
+      "type": "image",
+      "mediaKind": "photo",
+      "localPath": "assets/golden-record.jpg",
+      "usedIn": [
+        "study-guide/reliable-codes.md",
+        "slides/reliable-codes.md"
+      ],
+      "title": "Voyager Golden Record during production",
+      "creator": "NASA/JPL",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:The-golden-record_30269492703_o.jpg",
+      "license": "Public domain",
+      "attribution": "NASA/JPL, Voyager Golden Record during production, circa 1977, via Wikimedia Commons; U.S. federal government work, public domain; used without modification.",
+      "provenanceStatus": "verified",
+      "publicationStatus": "cleared",
+      "blockReason": null,
+      "rightsEvidence": {
+        "evidenceType": "official-media-description-page",
+        "evidenceUrl": "https://commons.wikimedia.org/wiki/File:The-golden-record_30269492703_o.jpg",
+        "verifiedAt": "2026-07-14",
+        "evidenceSnapshot": "metadata/evidence/media-photo-golden-record.html",
+        "evidenceSha256": "959d023e2b82661bb6cabda3e44c7e59fe3d780591de5aac2c352a78d5b4951d",
+        "evidenceRetrieval": {
+          "captureMode": "network",
+          "requestedUrl": "https://commons.wikimedia.org/wiki/File:The-golden-record_30269492703_o.jpg",
+          "finalUrl": "https://commons.wikimedia.org/wiki/File:The-golden-record_30269492703_o.jpg",
+          "redirectChain": [],
+          "retrievedAt": "2026-07-14T16:11:56.500Z",
+          "httpStatus": 200,
+          "contentType": "text/html; charset=UTF-8",
+          "byteLength": 89067,
+          "tool": {
+            "name": "coursewerk",
+            "version": "v0.11.0"
+          }
+        },
+        "evidenceCapture": {
+          "operator": {
+            "type": "automation",
+            "name": "Coursewerk Demo Builder"
+          },
+          "capturedAt": "2026-07-14T16:11:56.500Z",
+          "tool": {
+            "name": "coursewerk",
+            "version": "v0.11.0"
+          }
+        }
+      }
+    },
+    {
+      "id": "fig-surprise-entropy",
+      "type": "image",
+      "mediaKind": "diagram",
+      "localPath": "assets/surprise-entropy.svg",
+      "usedIn": [
+        "study-guide/measuring-information.md",
+        "slides/measuring-information.md"
+      ],
+      "title": "From outcome probability to surprise and entropy",
+      "creator": "Yu Wang",
+      "sourceUrl": null,
+      "license": "CC BY-SA 4.0",
+      "attribution": "Original accessible SVG diagram by Yu Wang for this AI-assisted Coursewerk package; probabilities and values are illustrative.",
+      "provenanceStatus": "self-generated",
+      "publicationStatus": "cleared",
+      "blockReason": null
+    },
+    {
+      "id": "fig-noisy-channel",
+      "type": "image",
+      "mediaKind": "diagram",
+      "localPath": "assets/noisy-channel.svg",
+      "usedIn": [
+        "study-guide/measuring-information.md",
+        "slides/measuring-information.md"
+      ],
+      "title": "A channel as a conditional probability rule",
+      "creator": "Yu Wang",
+      "sourceUrl": null,
+      "license": "CC BY-SA 4.0",
+      "attribution": "Original accessible SVG diagram by Yu Wang for this AI-assisted Coursewerk package; binary channel is a schematic model.",
+      "provenanceStatus": "self-generated",
+      "publicationStatus": "cleared",
+      "blockReason": null
+    },
+    {
+      "id": "fig-mutual-information",
+      "type": "image",
+      "mediaKind": "diagram",
+      "localPath": "assets/mutual-information.svg",
+      "usedIn": [
+        "study-guide/measuring-information.md",
+        "slides/measuring-information.md"
+      ],
+      "title": "Entropy bookkeeping for mutual information",
+      "creator": "Yu Wang",
+      "sourceUrl": null,
+      "license": "CC BY-SA 4.0",
+      "attribution": "Original accessible SVG diagram by Yu Wang for this AI-assisted Coursewerk package; conceptual bookkeeping for discrete Shannon entropy.",
+      "provenanceStatus": "self-generated",
+      "publicationStatus": "cleared",
+      "blockReason": null
+    },
+    {
+      "id": "fig-capacity-boundary",
+      "type": "image",
+      "mediaKind": "diagram",
+      "localPath": "assets/capacity-boundary.svg",
+      "usedIn": [
+        "study-guide/measuring-information.md",
+        "slides/measuring-information.md"
+      ],
+      "title": "Capacity as an asymptotic boundary on reliable rate",
+      "creator": "Yu Wang",
+      "sourceUrl": null,
+      "license": "CC BY-SA 4.0",
+      "attribution": "Original accessible SVG diagram by Yu Wang for this AI-assisted Coursewerk package; qualitative theorem map, not empirical data.",
+      "provenanceStatus": "self-generated",
+      "publicationStatus": "cleared",
+      "blockReason": null
+    },
+    {
+      "id": "fig-hamming-space",
+      "type": "image",
+      "mediaKind": "diagram",
+      "localPath": "assets/hamming-space.svg",
+      "usedIn": [
+        "study-guide/reliable-codes.md",
+        "slides/reliable-codes.md"
+      ],
+      "title": "Codeword separation in Hamming space",
+      "creator": "Yu Wang",
+      "sourceUrl": null,
+      "license": "CC BY-SA 4.0",
+      "attribution": "Original accessible SVG diagram by Yu Wang for this AI-assisted Coursewerk package; schematic codeword neighborhoods.",
+      "provenanceStatus": "self-generated",
+      "publicationStatus": "cleared",
+      "blockReason": null
+    },
+    {
+      "id": "fig-syndrome-decoding",
+      "type": "image",
+      "mediaKind": "diagram",
+      "localPath": "assets/syndrome-decoding.svg",
+      "usedIn": [
+        "study-guide/reliable-codes.md",
+        "slides/reliable-codes.md"
+      ],
+      "title": "Syndrome-guided single-bit correction workflow",
+      "creator": "Yu Wang",
+      "sourceUrl": null,
+      "license": "CC BY-SA 4.0",
+      "attribution": "Original accessible SVG diagram by Yu Wang for this AI-assisted Coursewerk package; conceptual workflow rather than a complete decoder implementation.",
+      "provenanceStatus": "self-generated",
+      "publicationStatus": "cleared",
+      "blockReason": null
+    }
+  ]
+}

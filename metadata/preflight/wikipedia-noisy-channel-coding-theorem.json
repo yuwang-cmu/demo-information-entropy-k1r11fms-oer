@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "wikipedia-noisy-channel-coding-theorem",
+  "sourceBindingSha256": "49c2ba06c5246fc343b98b0e4c2cc64c38411e252e979cf88c1b3cb95649e45b",
+  "policyId": "english-wikipedia-text",
+  "evidence": {
+    "url": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use",
+    "snapshot": "metadata/evidence/wikipedia-information-theory.html",
+    "sha256": "fc76a0277b4ab7c623a3bbcfd323393dc1a36ddcba39aaf2506552448f251714",
+    "retrieval": {
+      "captureMode": "local-file",
+      "claimedEvidenceUrl": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use",
+      "localFileName": "wikipedia-information-theory.html",
+      "retrievedAt": "2026-07-14T16:07:19.414Z",
+      "byteLength": 152376,
+      "contentType": "text/html",
+      "tool": {
+        "name": "coursewerk",
+        "version": "v0.11.0"
+      }
+    }
+  },
+  "operator": {
+    "type": "automation",
+    "name": "Coursewerk Demo Builder"
+  },
+  "processUseReview": {
+    "schemaVersion": 1,
+    "scannedAt": "2026-07-14T16:07:19.414Z",
+    "status": "no-notice-detected",
+    "legalEffectDetermined": false,
+    "notices": []
+  },
+  "noticeReviewComplete": true,
+  "policyChecksPassed": true,
+  "status": "cleared",
+  "warnings": [],
+  "blockers": [],
+  "generatedAt": "2026-07-14T16:07:19.414Z"
+}

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" role="img" aria-labelledby="title desc">
+  <title id="title">From outcome probability to surprise and entropy</title>
+  <desc id="desc">Three outcome cards show that lower probability gives greater self-information. A weighted average arrow leads to entropy, the expected surprise.</desc>
+  <defs>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#d9cfba" stroke-width="1"/></pattern>
+    <filter id="shadow"><feDropShadow dx="0" dy="5" stdDeviation="5" flood-opacity=".14"/></filter>
+  </defs>
+  <rect width="1000" height="600" fill="#f3ead7"/><rect width="1000" height="600" fill="url(#grid)" opacity=".72"/>
+  <text x="55" y="64" font-family="sans-serif" font-size="30" font-weight="700" fill="#17233c">Probability sets the surprise scale</text>
+  <text x="55" y="98" font-family="sans-serif" font-size="18" fill="#465068">Self-information: I(x) = −log₂ p(x)</text>
+  <g filter="url(#shadow)" font-family="sans-serif">
+    <rect x="60" y="145" width="250" height="245" rx="18" fill="#fffaf0" stroke="#2c8c87" stroke-width="3"/>
+    <text x="85" y="185" font-size="19" font-weight="700" fill="#17233c">COMMON</text><text x="85" y="230" font-size="48" font-weight="700" fill="#2c8c87">p = 1/2</text>
+    <rect x="85" y="260" width="170" height="24" rx="12" fill="#2c8c87"/><text x="85" y="334" font-size="26" fill="#17233c">I = 1 bit</text>
+    <rect x="375" y="145" width="250" height="245" rx="18" fill="#fffaf0" stroke="#e8a23a" stroke-width="3"/>
+    <text x="400" y="185" font-size="19" font-weight="700" fill="#17233c">LESS LIKELY</text><text x="400" y="230" font-size="48" font-weight="700" fill="#c47c14">p = 1/4</text>
+    <rect x="400" y="260" width="90" height="24" rx="12" fill="#e8a23a"/><text x="400" y="334" font-size="26" fill="#17233c">I = 2 bits</text>
+    <rect x="690" y="145" width="250" height="245" rx="18" fill="#fffaf0" stroke="#d95d5d" stroke-width="3"/>
+    <text x="715" y="185" font-size="19" font-weight="700" fill="#17233c">RARE</text><text x="715" y="230" font-size="48" font-weight="700" fill="#d95d5d">p = 1/8</text>
+    <rect x="715" y="260" width="45" height="24" rx="12" fill="#d95d5d"/><text x="715" y="334" font-size="26" fill="#17233c">I = 3 bits</text>
+  </g>
+  <path d="M205 425v40h590v-40" fill="none" stroke="#17233c" stroke-width="4"/>
+  <path d="M500 465v42" stroke="#17233c" stroke-width="4"/><path d="m488 497 12 18 12-18" fill="none" stroke="#17233c" stroke-width="4"/>
+  <rect x="270" y="515" width="460" height="58" rx="29" fill="#17233c"/>
+  <text x="500" y="552" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="700" fill="#f3ead7">ENTROPY = expected self-information</text>
+</svg>

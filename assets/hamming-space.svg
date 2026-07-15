@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" role="img" aria-labelledby="title desc">
+  <title id="title">Codeword separation in Hamming space</title>
+  <desc id="desc">Two codewords, 000000 and 111000, are surrounded by distinct one-bit-error neighborhoods. Their distance is three, so one error can be corrected by nearest-codeword decoding in this schematic.</desc>
+  <defs><pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#d9cfba" stroke-width="1"/></pattern></defs>
+  <rect width="1000" height="600" fill="#f3ead7"/><rect width="1000" height="600" fill="url(#grid)" opacity=".72"/>
+  <text x="55" y="65" font-family="sans-serif" font-size="30" font-weight="700" fill="#17233c">Redundancy creates distance between valid messages</text>
+  <circle cx="300" cy="310" r="175" fill="#2c8c87" fill-opacity=".18" stroke="#2c8c87" stroke-width="5" stroke-dasharray="12 9"/>
+  <circle cx="700" cy="310" r="175" fill="#e8a23a" fill-opacity=".18" stroke="#e8a23a" stroke-width="5" stroke-dasharray="12 9"/>
+  <circle cx="300" cy="310" r="68" fill="#17233c"/><circle cx="700" cy="310" r="68" fill="#17233c"/>
+  <g font-family="monospace" font-size="29" font-weight="700" fill="#f3ead7"><text x="300" y="320" text-anchor="middle">000000</text><text x="700" y="320" text-anchor="middle">111000</text></g>
+  <g font-family="monospace" font-size="20" fill="#17233c"><text x="200" y="220">100000</text><text x="170" y="390">001000</text><text x="330" y="465">000010</text><text x="630" y="210">110000</text><text x="745" y="405">111100</text><text x="620" y="470">111001</text></g>
+  <path d="M390 310H610" stroke="#d95d5d" stroke-width="5"/><text x="500" y="290" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="700" fill="#d95d5d">dₘᵢₙ = 3</text>
+  <rect x="170" y="525" width="660" height="50" rx="25" fill="#17233c"/><text x="500" y="557" text-anchor="middle" font-family="sans-serif" font-size="19" fill="#f3ead7">Disjoint radius-1 neighborhoods support correction of one bit error</text>
+</svg>

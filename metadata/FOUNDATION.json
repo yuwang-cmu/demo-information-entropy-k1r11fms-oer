@@ -1,0 +1,459 @@
+{
+  "schemaVersion": 1,
+  "usageProfile": "public-oer",
+  "audience": "introductory undergraduate learners across mathematics, computer science, engineering, and information science",
+  "access": "public-web",
+  "redistribution": "open-license",
+  "jurisdiction": "international",
+  "outputLicense": "CC-BY-SA-4.0",
+  "outputAuthors": [
+    {
+      "name": "Yu Wang",
+      "role": "accountable publisher and curator of this AI-generated Coursewerk demonstration",
+      "rightsHolder": true,
+      "accountabilityConfirmedByUser": true,
+      "aiAssistanceDisclosure": "The teaching materials were drafted, structured, formatted, and checked by an AI agent following Coursewerk without human-authored lesson content or subject-matter editing. Human involvement is limited to commissioning the demonstration, auditing the pipeline, visual review, and publication oversight."
+    }
+  ],
+  "privacy": {
+    "containsPersonalData": false,
+    "containsRestrictedContent": false
+  },
+  "sourcePrecedence": [
+    "wikipedia-information-theory",
+    "wikipedia-entropy-information-theory",
+    "wikipedia-mutual-information",
+    "wikipedia-channel-capacity",
+    "wikipedia-noisy-channel-coding-theorem",
+    "wikipedia-error-correction-code",
+    "wikipedia-hamming-code"
+  ],
+  "sources": [
+    {
+      "id": "wikipedia-information-theory",
+      "title": "Information theory",
+      "version": "live page; exact revision captured in SOURCE_CORPUS.json",
+      "publisher": "Wikipedia contributors",
+      "canonicalUrl": "https://en.wikipedia.org/wiki/Information_theory",
+      "role": "primary",
+      "use": "adaptation",
+      "scope": [
+        "whole article text relevant to information, entropy, coding, channels, and applications; separately licensed media excluded"
+      ],
+      "rightsBasis": {
+        "type": "open-license",
+        "license": "CC-BY-SA-4.0",
+        "evidenceType": "official-publisher-page",
+        "evidenceUrl": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use",
+        "verifiedAt": "2026-07-15",
+        "evidenceSnapshot": "metadata/evidence/wikipedia-information-theory.html",
+        "evidenceSha256": "fc76a0277b4ab7c623a3bbcfd323393dc1a36ddcba39aaf2506552448f251714",
+        "evidenceRetrieval": {
+          "captureMode": "network",
+          "requestedUrl": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use",
+          "finalUrl": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use",
+          "redirectChain": [],
+          "retrievedAt": "2026-07-14T16:06:45.637Z",
+          "httpStatus": 200,
+          "contentType": "text/html; charset=UTF-8",
+          "byteLength": 152376,
+          "tool": {
+            "name": "coursewerk",
+            "version": "v0.11.0"
+          }
+        },
+        "evidenceCapture": {
+          "operator": {
+            "type": "automation",
+            "name": "Coursewerk Demo Builder"
+          },
+          "capturedAt": "2026-07-14T16:06:45.637Z",
+          "tool": {
+            "name": "coursewerk",
+            "version": "v0.11.0"
+          }
+        },
+        "processUseReview": {
+          "schemaVersion": 1,
+          "scannedAt": "2026-07-14T16:06:45.637Z",
+          "status": "no-notice-detected",
+          "legalEffectDetermined": false,
+          "notices": []
+        },
+        "preflightReceipt": "metadata/preflight/wikipedia-information-theory.json",
+        "preflightReceiptSha256": "e847f9d8b0551253b2af07ba4b5ac0cfb49e4e3852c40fb637b66f69307f0e62"
+      },
+      "requiredAttribution": {
+        "textIncludes": "Wikipedia contributors",
+        "url": "https://en.wikipedia.org/wiki/Information_theory",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "modificationNotice": "Adapted and reorganized for this teaching resource.",
+        "placement": "metadata-and-relevant-deliverables"
+      }
+    },
+    {
+      "id": "wikipedia-entropy-information-theory",
+      "title": "Entropy (information theory)",
+      "version": "live page; exact revision captured in SOURCE_CORPUS.json",
+      "publisher": "Wikipedia contributors",
+      "canonicalUrl": "https://en.wikipedia.org/wiki/Entropy_(information_theory)",
+      "role": "primary",
+      "use": "adaptation",
+      "scope": [
+        "whole article text relevant to self-information, entropy, units, examples, and interpretation; separately licensed media excluded"
+      ],
+      "rightsBasis": {
+        "type": "open-license",
+        "license": "CC-BY-SA-4.0",
+        "evidenceType": "official-publisher-page",
+        "evidenceUrl": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use",
+        "verifiedAt": "2026-07-15",
+        "evidenceSnapshot": "metadata/evidence/wikipedia-information-theory.html",
+        "evidenceSha256": "fc76a0277b4ab7c623a3bbcfd323393dc1a36ddcba39aaf2506552448f251714",
+        "evidenceRetrieval": {
+          "captureMode": "network",
+          "requestedUrl": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use",
+          "finalUrl": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use",
+          "redirectChain": [],
+          "retrievedAt": "2026-07-14T16:06:51.504Z",
+          "httpStatus": 200,
+          "contentType": "text/html; charset=UTF-8",
+          "byteLength": 152376,
+          "tool": {
+            "name": "coursewerk",
+            "version": "v0.11.0"
+          }
+        },
+        "evidenceCapture": {
+          "operator": {
+            "type": "automation",
+            "name": "Coursewerk Demo Builder"
+          },
+          "capturedAt": "2026-07-14T16:06:51.504Z",
+          "tool": {
+            "name": "coursewerk",
+            "version": "v0.11.0"
+          }
+        },
+        "processUseReview": {
+          "schemaVersion": 1,
+          "scannedAt": "2026-07-14T16:06:51.504Z",
+          "status": "no-notice-detected",
+          "legalEffectDetermined": false,
+          "notices": []
+        },
+        "preflightReceipt": "metadata/preflight/wikipedia-entropy-information-theory.json",
+        "preflightReceiptSha256": "afd1a17836faa85711a6351dd80c39aa252c3519b4fda5dd323b9bab79096220"
+      },
+      "requiredAttribution": {
+        "textIncludes": "Wikipedia contributors",
+        "url": "https://en.wikipedia.org/wiki/Entropy_(information_theory)",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "modificationNotice": "Adapted and reorganized for this teaching resource.",
+        "placement": "metadata-and-relevant-deliverables"
+      }
+    },
+    {
+      "id": "wikipedia-mutual-information",
+      "title": "Mutual information",
+      "version": "live page; exact revision captured in SOURCE_CORPUS.json",
+      "publisher": "Wikipedia contributors",
+      "canonicalUrl": "https://en.wikipedia.org/wiki/Mutual_information",
+      "role": "primary",
+      "use": "adaptation",
+      "scope": [
+        "sections relevant to shared information, conditional uncertainty, independence, and interpretation; separately licensed media excluded"
+      ],
+      "rightsBasis": {
+        "type": "open-license",
+        "license": "CC-BY-SA-4.0",
+        "evidenceType": "official-publisher-page",
+        "evidenceUrl": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use",
+        "verifiedAt": "2026-07-15",
+        "evidenceSnapshot": "metadata/evidence/wikipedia-information-theory.html",
+        "evidenceSha256": "fc76a0277b4ab7c623a3bbcfd323393dc1a36ddcba39aaf2506552448f251714",
+        "evidenceRetrieval": {
+          "captureMode": "network",
+          "requestedUrl": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use",
+          "finalUrl": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use",
+          "redirectChain": [],
+          "retrievedAt": "2026-07-14T16:07:00.418Z",
+          "httpStatus": 200,
+          "contentType": "text/html; charset=UTF-8",
+          "byteLength": 152376,
+          "tool": {
+            "name": "coursewerk",
+            "version": "v0.11.0"
+          }
+        },
+        "evidenceCapture": {
+          "operator": {
+            "type": "automation",
+            "name": "Coursewerk Demo Builder"
+          },
+          "capturedAt": "2026-07-14T16:07:00.418Z",
+          "tool": {
+            "name": "coursewerk",
+            "version": "v0.11.0"
+          }
+        },
+        "processUseReview": {
+          "schemaVersion": 1,
+          "scannedAt": "2026-07-14T16:07:00.418Z",
+          "status": "no-notice-detected",
+          "legalEffectDetermined": false,
+          "notices": []
+        },
+        "preflightReceipt": "metadata/preflight/wikipedia-mutual-information.json",
+        "preflightReceiptSha256": "e3030d0087f76ffbdc0b5fbf114c74311b802f9950637df41924b467fcc7f600"
+      },
+      "requiredAttribution": {
+        "textIncludes": "Wikipedia contributors",
+        "url": "https://en.wikipedia.org/wiki/Mutual_information",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "modificationNotice": "Adapted and reorganized for this teaching resource.",
+        "placement": "metadata-and-relevant-deliverables"
+      }
+    },
+    {
+      "id": "wikipedia-channel-capacity",
+      "title": "Channel capacity",
+      "version": "live page; exact revision captured in SOURCE_CORPUS.json",
+      "publisher": "Wikipedia contributors",
+      "canonicalUrl": "https://en.wikipedia.org/wiki/Channel_capacity",
+      "role": "primary",
+      "use": "adaptation",
+      "scope": [
+        "whole article text relevant to channels, mutual-information maximization, rates, and model assumptions; separately licensed media excluded"
+      ],
+      "rightsBasis": {
+        "type": "open-license",
+        "license": "CC-BY-SA-4.0",
+        "evidenceType": "official-publisher-page",
+        "evidenceUrl": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use",
+        "verifiedAt": "2026-07-15",
+        "evidenceSnapshot": "metadata/evidence/wikipedia-information-theory.html",
+        "evidenceSha256": "fc76a0277b4ab7c623a3bbcfd323393dc1a36ddcba39aaf2506552448f251714",
+        "evidenceRetrieval": {
+          "captureMode": "local-file",
+          "claimedEvidenceUrl": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use",
+          "localFileName": "wikipedia-information-theory.html",
+          "retrievedAt": "2026-07-14T16:07:19.310Z",
+          "byteLength": 152376,
+          "contentType": "text/html",
+          "tool": {
+            "name": "coursewerk",
+            "version": "v0.11.0"
+          }
+        },
+        "evidenceCapture": {
+          "operator": {
+            "type": "automation",
+            "name": "Coursewerk Demo Builder"
+          },
+          "capturedAt": "2026-07-14T16:07:19.310Z",
+          "tool": {
+            "name": "coursewerk",
+            "version": "v0.11.0"
+          }
+        },
+        "processUseReview": {
+          "schemaVersion": 1,
+          "scannedAt": "2026-07-14T16:07:19.310Z",
+          "status": "no-notice-detected",
+          "legalEffectDetermined": false,
+          "notices": []
+        },
+        "preflightReceipt": "metadata/preflight/wikipedia-channel-capacity.json",
+        "preflightReceiptSha256": "71332097c27dcc623a290f51cabac2624773732a1f29fd18985416d57ee9ecda"
+      },
+      "requiredAttribution": {
+        "textIncludes": "Wikipedia contributors",
+        "url": "https://en.wikipedia.org/wiki/Channel_capacity",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "modificationNotice": "Adapted and reorganized for this teaching resource.",
+        "placement": "metadata-and-relevant-deliverables"
+      }
+    },
+    {
+      "id": "wikipedia-noisy-channel-coding-theorem",
+      "title": "Noisy-channel coding theorem",
+      "version": "live page; exact revision captured in SOURCE_CORPUS.json",
+      "publisher": "Wikipedia contributors",
+      "canonicalUrl": "https://en.wikipedia.org/wiki/Noisy-channel_coding_theorem",
+      "role": "primary",
+      "use": "adaptation",
+      "scope": [
+        "whole article text relevant to achievability, converse, asymptotic reliability, and theorem boundaries; separately licensed media excluded"
+      ],
+      "rightsBasis": {
+        "type": "open-license",
+        "license": "CC-BY-SA-4.0",
+        "evidenceType": "official-publisher-page",
+        "evidenceUrl": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use",
+        "verifiedAt": "2026-07-15",
+        "evidenceSnapshot": "metadata/evidence/wikipedia-information-theory.html",
+        "evidenceSha256": "fc76a0277b4ab7c623a3bbcfd323393dc1a36ddcba39aaf2506552448f251714",
+        "evidenceRetrieval": {
+          "captureMode": "local-file",
+          "claimedEvidenceUrl": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use",
+          "localFileName": "wikipedia-information-theory.html",
+          "retrievedAt": "2026-07-14T16:07:19.414Z",
+          "byteLength": 152376,
+          "contentType": "text/html",
+          "tool": {
+            "name": "coursewerk",
+            "version": "v0.11.0"
+          }
+        },
+        "evidenceCapture": {
+          "operator": {
+            "type": "automation",
+            "name": "Coursewerk Demo Builder"
+          },
+          "capturedAt": "2026-07-14T16:07:19.414Z",
+          "tool": {
+            "name": "coursewerk",
+            "version": "v0.11.0"
+          }
+        },
+        "processUseReview": {
+          "schemaVersion": 1,
+          "scannedAt": "2026-07-14T16:07:19.414Z",
+          "status": "no-notice-detected",
+          "legalEffectDetermined": false,
+          "notices": []
+        },
+        "preflightReceipt": "metadata/preflight/wikipedia-noisy-channel-coding-theorem.json",
+        "preflightReceiptSha256": "51ac01b2fef32e1a0bce637875caf678ac8a0aa2711a2ed8cbd4dfcfb21f2971"
+      },
+      "requiredAttribution": {
+        "textIncludes": "Wikipedia contributors",
+        "url": "https://en.wikipedia.org/wiki/Noisy-channel_coding_theorem",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "modificationNotice": "Adapted and reorganized for this teaching resource.",
+        "placement": "metadata-and-relevant-deliverables"
+      }
+    },
+    {
+      "id": "wikipedia-error-correction-code",
+      "title": "Error correction code",
+      "version": "live page; exact revision captured in SOURCE_CORPUS.json",
+      "publisher": "Wikipedia contributors",
+      "canonicalUrl": "https://en.wikipedia.org/wiki/Error_correction_code",
+      "role": "primary",
+      "use": "adaptation",
+      "scope": [
+        "whole article text relevant to forward error correction, redundancy, block and convolutional codes, interleaving, and applications; separately licensed media excluded"
+      ],
+      "rightsBasis": {
+        "type": "open-license",
+        "license": "CC-BY-SA-4.0",
+        "evidenceType": "official-publisher-page",
+        "evidenceUrl": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use",
+        "verifiedAt": "2026-07-15",
+        "evidenceSnapshot": "metadata/evidence/wikipedia-information-theory.html",
+        "evidenceSha256": "fc76a0277b4ab7c623a3bbcfd323393dc1a36ddcba39aaf2506552448f251714",
+        "evidenceRetrieval": {
+          "captureMode": "local-file",
+          "claimedEvidenceUrl": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use",
+          "localFileName": "wikipedia-information-theory.html",
+          "retrievedAt": "2026-07-14T16:07:19.517Z",
+          "byteLength": 152376,
+          "contentType": "text/html",
+          "tool": {
+            "name": "coursewerk",
+            "version": "v0.11.0"
+          }
+        },
+        "evidenceCapture": {
+          "operator": {
+            "type": "automation",
+            "name": "Coursewerk Demo Builder"
+          },
+          "capturedAt": "2026-07-14T16:07:19.517Z",
+          "tool": {
+            "name": "coursewerk",
+            "version": "v0.11.0"
+          }
+        },
+        "processUseReview": {
+          "schemaVersion": 1,
+          "scannedAt": "2026-07-14T16:07:19.517Z",
+          "status": "no-notice-detected",
+          "legalEffectDetermined": false,
+          "notices": []
+        },
+        "preflightReceipt": "metadata/preflight/wikipedia-error-correction-code.json",
+        "preflightReceiptSha256": "f7323548225474250b08ac76b1b2439f10c282cd80377e584f9bf4d7f73717b9"
+      },
+      "requiredAttribution": {
+        "textIncludes": "Wikipedia contributors",
+        "url": "https://en.wikipedia.org/wiki/Error_correction_code",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "modificationNotice": "Adapted and reorganized for this teaching resource.",
+        "placement": "metadata-and-relevant-deliverables"
+      }
+    },
+    {
+      "id": "wikipedia-hamming-code",
+      "title": "Hamming code",
+      "version": "live page; exact revision captured in SOURCE_CORPUS.json",
+      "publisher": "Wikipedia contributors",
+      "canonicalUrl": "https://en.wikipedia.org/wiki/Hamming_code",
+      "role": "primary",
+      "use": "adaptation",
+      "scope": [
+        "whole article text relevant to Hamming distance, parity checks, syndrome decoding, SEC and SECDED boundaries; separately licensed media excluded"
+      ],
+      "rightsBasis": {
+        "type": "open-license",
+        "license": "CC-BY-SA-4.0",
+        "evidenceType": "official-publisher-page",
+        "evidenceUrl": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use",
+        "verifiedAt": "2026-07-15",
+        "evidenceSnapshot": "metadata/evidence/wikipedia-information-theory.html",
+        "evidenceSha256": "fc76a0277b4ab7c623a3bbcfd323393dc1a36ddcba39aaf2506552448f251714",
+        "evidenceRetrieval": {
+          "captureMode": "local-file",
+          "claimedEvidenceUrl": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use",
+          "localFileName": "wikipedia-information-theory.html",
+          "retrievedAt": "2026-07-14T16:07:19.619Z",
+          "byteLength": 152376,
+          "contentType": "text/html",
+          "tool": {
+            "name": "coursewerk",
+            "version": "v0.11.0"
+          }
+        },
+        "evidenceCapture": {
+          "operator": {
+            "type": "automation",
+            "name": "Coursewerk Demo Builder"
+          },
+          "capturedAt": "2026-07-14T16:07:19.619Z",
+          "tool": {
+            "name": "coursewerk",
+            "version": "v0.11.0"
+          }
+        },
+        "processUseReview": {
+          "schemaVersion": 1,
+          "scannedAt": "2026-07-14T16:07:19.619Z",
+          "status": "no-notice-detected",
+          "legalEffectDetermined": false,
+          "notices": []
+        },
+        "preflightReceipt": "metadata/preflight/wikipedia-hamming-code.json",
+        "preflightReceiptSha256": "d2d2211944e6ce6551eca296dcfd3881655f952af7a5da7fe078394ad82c4922"
+      },
+      "requiredAttribution": {
+        "textIncludes": "Wikipedia contributors",
+        "url": "https://en.wikipedia.org/wiki/Hamming_code",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "modificationNotice": "Adapted and reorganized for this teaching resource.",
+        "placement": "metadata-and-relevant-deliverables"
+      }
+    }
+  ]
+}

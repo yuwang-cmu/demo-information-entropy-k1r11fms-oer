@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" role="img" aria-labelledby="title desc">
+  <title id="title">Entropy bookkeeping for mutual information</title>
+  <desc id="desc">Overlapping blue and amber circles represent uncertainty in X and Y. The overlap is mutual information; non-overlapping regions are conditional uncertainty. A note limits the picture to conceptual bookkeeping for discrete Shannon entropy.</desc>
+  <defs><pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#d9cfba" stroke-width="1"/></pattern></defs>
+  <rect width="1000" height="600" fill="#f3ead7"/><rect width="1000" height="600" fill="url(#grid)" opacity=".72"/>
+  <text x="55" y="65" font-family="sans-serif" font-size="30" font-weight="700" fill="#17233c">What does observing Y tell us about X?</text>
+  <circle cx="405" cy="310" r="210" fill="#2c8c87" fill-opacity=".68" stroke="#17635f" stroke-width="4"/>
+  <circle cx="595" cy="310" r="210" fill="#e8a23a" fill-opacity=".68" stroke="#b97716" stroke-width="4"/>
+  <g font-family="sans-serif" fill="#17233c"><text x="270" y="180" text-anchor="middle" font-size="30" font-weight="700">H(X)</text><text x="730" y="180" text-anchor="middle" font-size="30" font-weight="700">H(Y)</text><text x="500" y="285" text-anchor="middle" font-size="26" font-weight="700">I(X;Y)</text><text x="500" y="320" text-anchor="middle" font-size="18">shared information</text><text x="295" y="345" text-anchor="middle" font-size="22" font-weight="700">H(X|Y)</text><text x="705" y="345" text-anchor="middle" font-size="22" font-weight="700">H(Y|X)</text></g>
+  <rect x="160" y="528" width="680" height="46" rx="23" fill="#17233c"/><text x="500" y="558" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#f3ead7">Conceptual bookkeeping for discrete Shannon entropy—not a literal physical area</text>
+</svg>

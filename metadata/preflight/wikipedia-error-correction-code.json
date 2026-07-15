@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "wikipedia-error-correction-code",
+  "sourceBindingSha256": "355323ea78311f5040f17af29ecae0d906d14d0f373db811613a19d5d89cc4eb",
+  "policyId": "english-wikipedia-text",
+  "evidence": {
+    "url": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use",
+    "snapshot": "metadata/evidence/wikipedia-information-theory.html",
+    "sha256": "fc76a0277b4ab7c623a3bbcfd323393dc1a36ddcba39aaf2506552448f251714",
+    "retrieval": {
+      "captureMode": "local-file",
+      "claimedEvidenceUrl": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use",
+      "localFileName": "wikipedia-information-theory.html",
+      "retrievedAt": "2026-07-14T16:07:19.517Z",
+      "byteLength": 152376,
+      "contentType": "text/html",
+      "tool": {
+        "name": "coursewerk",
+        "version": "v0.11.0"
+      }
+    }
+  },
+  "operator": {
+    "type": "automation",
+    "name": "Coursewerk Demo Builder"
+  },
+  "processUseReview": {
+    "schemaVersion": 1,
+    "scannedAt": "2026-07-14T16:07:19.517Z",
+    "status": "no-notice-detected",
+    "legalEffectDetermined": false,
+    "notices": []
+  },
+  "noticeReviewComplete": true,
+  "policyChecksPassed": true,
+  "status": "cleared",
+  "warnings": [],
+  "blockers": [],
+  "generatedAt": "2026-07-14T16:07:19.517Z"
+}

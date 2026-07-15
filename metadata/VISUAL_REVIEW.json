@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 1,
+  "status": "passed",
+  "reviewer": {
+    "type": "human",
+    "name": "Yu Wang"
+  },
+  "reviewedAt": "2026-07-15",
+  "inspectionMethod": "browser-visual-dom",
+  "attestation": "Yu Wang approved all six current browser carriers, including the corrected slide layouts, for packaging after the requested human visual and interactive review.",
+  "carriers": [
+    {
+      "source": "practice/measuring-information.md",
+      "carrier": "practice/measuring-information.md.html",
+      "builder": "orz-mdhtml",
+      "sourceSha256": "4792738a8dd6e0d7c692c8bad754ae9f0456ce01ba003273511940c34b46fca5",
+      "outputFingerprint": {
+        "algorithm": "sha256",
+        "normalization": "coursewerk-carrier-v1",
+        "value": "0609737cc7eaaa6c6fcff4513ed7085a56a59e3e34f58a21432a8732d551f8b1"
+      },
+      "localAssetDigests": []
+    },
+    {
+      "source": "practice/reliable-codes.md",
+      "carrier": "practice/reliable-codes.md.html",
+      "builder": "orz-mdhtml",
+      "sourceSha256": "f30302b85016a0cc2509e39c093f47a3042c04d0a9f2afda21dba3836bb17bfb",
+      "outputFingerprint": {
+        "algorithm": "sha256",
+        "normalization": "coursewerk-carrier-v1",
+        "value": "26db4b454d8fa3b0be728f1b29762fd000b32dcf657eb59ddaf7c71bbb3aeea6"
+      },
+      "localAssetDigests": []
+    },
+    {
+      "source": "slides/measuring-information.md",
+      "carrier": "slides/measuring-information.slides.html",
+      "builder": "orz-slides",
+      "sourceSha256": "39d16c1f6b1c062094a513a4f314fbbcaac40745638bb96030aaee8a788140ad",
+      "outputFingerprint": {
+        "algorithm": "sha256",
+        "normalization": "coursewerk-carrier-v1",
+        "value": "50043b1642617c210e35ea2c2aca17d162180040ca2c9d4e81d3aceda9ea5ac2"
+      },
+      "localAssetDigests": [
+        {
+          "reference": "../assets/capacity-boundary.svg",
+          "path": "assets/capacity-boundary.svg",
+          "sha256": "521cea66d2dd9d39b6eddb70642fb6a2064bd5e693f112c707350599e3912338"
+        },
+        {
+          "reference": "../assets/goldstone-antenna.jpg",
+          "path": "assets/goldstone-antenna.jpg",
+          "sha256": "7d2e414851977038d44d5f0a21a26a4152e54d2127dcc11b42472d988dbaccde"
+        },
+        {
+          "reference": "../assets/mutual-information.svg",
+          "path": "assets/mutual-information.svg",
+          "sha256": "d7c97e1f25e1e36e374b5d3fe77784b357940f3443e65c62be2e83adc3490b79"
+        },
+        {
+          "reference": "../assets/noisy-channel.svg",
+          "path": "assets/noisy-channel.svg",
+          "sha256": "ae039acb2eef9cb7c917dfb13e5ee43b8dfd817c99cc6908952f54a0f0cd78d1"
+        },
+        {
+          "reference": "../assets/surprise-entropy.svg",
+          "path": "assets/surprise-entropy.svg",
+          "sha256": "808c76f1394643ee26433de7656101da35b5a1d209bab5902ea9f1ef701f4dc5"
+        }
+      ]
+    },
+    {
+      "source": "slides/reliable-codes.md",
+      "carrier": "slides/reliable-codes.slides.html",
+      "builder": "orz-slides",
+      "sourceSha256": "d55e489f893ab49025a7775b6ba194927990fdba48e08d083c31dacb93f2ffb4",
+      "outputFingerprint": {
+        "algorithm": "sha256",
+        "normalization": "coursewerk-carrier-v1",
+        "value": "62877366d435a87293a56b24a54d15da36132081c2ee765333003b96cd875b2b"
+      },
+      "localAssetDigests": [
+        {
+          "reference": "../assets/golden-record.jpg",
+          "path": "assets/golden-record.jpg",
+          "sha256": "16de4e62339b31017438237d3324560f3611fae2dc6ce19df4fb8e96e2655878"
+        },
+        {
+          "reference": "../assets/hamming-space.svg",
+          "path": "assets/hamming-space.svg",
+          "sha256": "654af91d74fba34a3eb6234efd9593e36bd5a25db5cb72e315f14cb225480f06"
+        },
+        {
+          "reference": "../assets/syndrome-decoding.svg",
+          "path": "assets/syndrome-decoding.svg",
+          "sha256": "60bf47d65d8f00afe4647e5b46827319f9534e4c5e552b69c06d771f49c8f10f"
+        }
+      ]
+    },
+    {
+      "source": "study-guide/measuring-information.md",
+      "carrier": "study-guide/measuring-information.md.html",
+      "builder": "orz-mdhtml",
+      "sourceSha256": "1df63eb54f1932c5ecd830e141abde889b2fa7db4d0911d903fb0ecb394d294d",
+      "outputFingerprint": {
+        "algorithm": "sha256",
+        "normalization": "coursewerk-carrier-v1",
+        "value": "2ff1482963faedcb778cd6732a400d950659ac8c7379a4159777b57f4616b8d5"
+      },
+      "localAssetDigests": [
+        {
+          "reference": "../assets/capacity-boundary.svg",
+          "path": "assets/capacity-boundary.svg",
+          "sha256": "521cea66d2dd9d39b6eddb70642fb6a2064bd5e693f112c707350599e3912338"
+        },
+        {
+          "reference": "../assets/goldstone-antenna.jpg",
+          "path": "assets/goldstone-antenna.jpg",
+          "sha256": "7d2e414851977038d44d5f0a21a26a4152e54d2127dcc11b42472d988dbaccde"
+        },
+        {
+          "reference": "../assets/mutual-information.svg",
+          "path": "assets/mutual-information.svg",
+          "sha256": "d7c97e1f25e1e36e374b5d3fe77784b357940f3443e65c62be2e83adc3490b79"
+        },
+        {
+          "reference": "../assets/noisy-channel.svg",
+          "path": "assets/noisy-channel.svg",
+          "sha256": "ae039acb2eef9cb7c917dfb13e5ee43b8dfd817c99cc6908952f54a0f0cd78d1"
+        },
+        {
+          "reference": "../assets/surprise-entropy.svg",
+          "path": "assets/surprise-entropy.svg",
+          "sha256": "808c76f1394643ee26433de7656101da35b5a1d209bab5902ea9f1ef701f4dc5"
+        }
+      ]
+    },
+    {
+      "source": "study-guide/reliable-codes.md",
+      "carrier": "study-guide/reliable-codes.md.html",
+      "builder": "orz-mdhtml",
+      "sourceSha256": "7e3e3f4189d024e032c5fdf07898f7295b255c941bad6f55e989897ac9f3173d",
+      "outputFingerprint": {
+        "algorithm": "sha256",
+        "normalization": "coursewerk-carrier-v1",
+        "value": "d12b18dae28842a48ff5e3ed17392dc869a51b0880cf084c424e001c2e5bf468"
+      },
+      "localAssetDigests": [
+        {
+          "reference": "../assets/golden-record.jpg",
+          "path": "assets/golden-record.jpg",
+          "sha256": "16de4e62339b31017438237d3324560f3611fae2dc6ce19df4fb8e96e2655878"
+        },
+        {
+          "reference": "../assets/hamming-space.svg",
+          "path": "assets/hamming-space.svg",
+          "sha256": "654af91d74fba34a3eb6234efd9593e36bd5a25db5cb72e315f14cb225480f06"
+        },
+        {
+          "reference": "../assets/syndrome-decoding.svg",
+          "path": "assets/syndrome-decoding.svg",
+          "sha256": "60bf47d65d8f00afe4647e5b46827319f9534e4c5e552b69c06d771f49c8f10f"
+        }
+      ]
+    }
+  ]
+}

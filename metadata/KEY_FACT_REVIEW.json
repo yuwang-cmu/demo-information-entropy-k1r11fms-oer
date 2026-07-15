@@ -1,0 +1,224 @@
+{
+  "schemaVersion": 1,
+  "mode": "light",
+  "reviewKind": "same-model-independent-pass",
+  "authoringSystem": "OpenAI Codex",
+  "authoringModelId": "gpt-5",
+  "reviewer": {
+    "name": "OpenAI Codex same-model assurance reviewer",
+    "type": "ai",
+    "modelId": "gpt-5"
+  },
+  "independence": {
+    "separatePass": true,
+    "contextReset": true,
+    "approach": "After drafting, a separate checklist-driven pass reopened the foundation, all seven revision-bound source snapshots and records, retained rights evidence, structured media provenance, generated attribution, and every learner-facing claim. The pass recalculated representative examples, tested theorem boundaries, challenged error-correction overclaims, and verified license compatibility without relying on drafting notes."
+  },
+  "reviewedAt": "2026-07-15",
+  "bindings": {
+    "manifestSha256": "4abac7c4b999d6140f511da30bf21290e8c1a24b4eca48e7e9a3b6835f114bac",
+    "licenseSha256": "23ee78c8bae49cf08ea2f0c84945c66b987ebe4520881fb51b3dad4fb43d07c2",
+    "foundationSha256": "e9e33246485a7c63a14a9a8f364d862bac27dcd144cbf94efab8f33c6090ba7d",
+    "provenanceSha256": "91164bbc127f370058f3611dc772669cc2b5d8ee8b2c29e878349198390249b1",
+    "attributionSha256": "62ce5d341b0f4b6fd6ea455754141bf0c5f0d6fad9aabddb890c5a2a445991d6",
+    "sourceRecordSha256": "01bdd4bb6dd932fe4ad8b2423d0c241305ac1548bcca8c7d75ed53231fcfdb7c",
+    "deliverableTreeSha256": "cb5e000d13d16333375f4ea9e306866be8d0fa94e6646eb3b0bb4e7b02c78dc9"
+  },
+  "checks": [
+    {
+      "id": "accountable-identity",
+      "status": "passed",
+      "note": "FOUNDATION.json names Yu Wang as the accountable publisher, curator, and rights holder and separately discloses AI drafting; no AI-agent label is used as the public author or rightsholder."
+    },
+    {
+      "id": "source-identity-version",
+      "status": "passed",
+      "note": "All seven Wikipedia articles are bound to exact page and revision IDs, revision timestamps and permanent URLs, raw API snapshots, extracted-text hashes, retrieval times, and word counts."
+    },
+    {
+      "id": "source-license-evidence",
+      "status": "passed",
+      "note": "Every text source has pre-ingestion clearance bound to a retained and hashed Wikimedia Terms of Use snapshot; the same official snapshot was reused for four records after capture, with local-file retrieval honestly recorded."
+    },
+    {
+      "id": "external-media-rights",
+      "status": "passed",
+      "note": "Both NASA/JPL photographs are documented as U.S. federal government works in the public domain and have retained, hashed Commons description-page evidence. Six SVG diagrams are identified as original contributions by Yu Wang."
+    },
+    {
+      "id": "output-license-compatibility",
+      "status": "passed",
+      "note": "CC BY-SA 4.0 satisfies the adapted Wikipedia text obligation and is compatible with the public-domain photographs and original diagrams. The manifest, foundation, LICENSE, chapter notices, provenance, and attribution agree."
+    },
+    {
+      "id": "attribution-obligations",
+      "status": "passed",
+      "note": "ATTRIBUTION.md mirrors structured provenance. Learner-facing chapters identify Wikipedia adaptation and the revision record; both photographs carry creator, source route, public-domain status, and modification status."
+    },
+    {
+      "id": "scientific-key-facts",
+      "status": "passed",
+      "note": "The independent pass verified the probability and entropy formulas, mutual-information identities, binary-symmetric-channel examples, capacity and noisy-channel theorem boundaries, code-rate calculations, distance guarantees, parity limitations, Hamming syndrome convention, extended-Hamming SECDED boundary, and interleaving limitation. No unresolved overclaim remains."
+    }
+  ],
+  "keyFacts": [
+    {
+      "id": "fact-self-information",
+      "claim": "For an outcome of positive probability p, self-information is -log_b(p); the logarithm base sets the unit, and the quantity measures statistical surprise rather than semantic importance.",
+      "status": "verified",
+      "evidenceSourceIds": [
+        "wikipedia-information-theory",
+        "wikipedia-entropy-information-theory"
+      ],
+      "usedIn": [
+        "concepts/measuring-information.md",
+        "study-guide/measuring-information.md",
+        "slides/measuring-information.md",
+        "practice/measuring-information.md"
+      ],
+      "note": "Examples at probabilities 1/2, 1/4, and 1/8 recalculate to 1, 2, and 3 bits. The zero-probability boundary is treated as model-support failure, not infinite meaning."
+    },
+    {
+      "id": "fact-entropy",
+      "claim": "Discrete Shannon entropy is expected self-information and, for a fixed finite alphabet, is maximized by the uniform distribution.",
+      "status": "verified",
+      "evidenceSourceIds": [
+        "wikipedia-entropy-information-theory"
+      ],
+      "usedIn": [
+        "concepts/measuring-information.md",
+        "study-guide/measuring-information.md",
+        "slides/measuring-information.md",
+        "assessment-support/measuring-information.md",
+        "practice/measuring-information.md"
+      ],
+      "note": "The four-symbol distribution (1/2,1/4,1/8,1/8) gives 1.75 bits, below the 2-bit uniform maximum; the fixed-alphabet condition is stated."
+    },
+    {
+      "id": "fact-mutual-information",
+      "claim": "For discrete variables, mutual information can be expressed as H(X)-H(X|Y), is symmetric and nonnegative, and equals zero exactly at statistical independence.",
+      "status": "verified",
+      "evidenceSourceIds": [
+        "wikipedia-mutual-information",
+        "wikipedia-entropy-information-theory"
+      ],
+      "usedIn": [
+        "concepts/measuring-information.md",
+        "study-guide/measuring-information.md",
+        "slides/measuring-information.md",
+        "practice/measuring-information.md"
+      ],
+      "note": "The package does not infer causation from mutual information and labels the overlapping-region diagram as conceptual bookkeeping, not universal geometry."
+    },
+    {
+      "id": "fact-bsc-capacity",
+      "claim": "For a binary symmetric channel with crossover probability 0≤p≤1/2, a uniform input achieves capacity C=1-h2(p) bits per channel use.",
+      "status": "verified",
+      "evidenceSourceIds": [
+        "wikipedia-channel-capacity",
+        "wikipedia-information-theory"
+      ],
+      "usedIn": [
+        "study-guide/measuring-information.md",
+        "slides/measuring-information.md",
+        "practice/measuring-information.md"
+      ],
+      "note": "At p=0.1 the recalculated binary entropy is approximately 0.469, giving approximately 0.531 bit/use; at p=1/2 capacity is zero. Every instance is scoped to the BSC model."
+    },
+    {
+      "id": "fact-capacity-theorem-boundary",
+      "claim": "Channel capacity maximizes mutual information over permitted input distributions; below capacity suitable code families can make error probability arbitrarily small asymptotically, whereas this does not guarantee zero error for a finite block or an arbitrary code.",
+      "status": "verified",
+      "evidenceSourceIds": [
+        "wikipedia-channel-capacity",
+        "wikipedia-noisy-channel-coding-theorem"
+      ],
+      "usedIn": [
+        "concepts/measuring-information.md",
+        "study-guide/measuring-information.md",
+        "slides/measuring-information.md",
+        "assessment-support/measuring-information.md",
+        "practice/measuring-information.md"
+      ],
+      "note": "The materials distinguish capacity from achieved mutual information and require code, block length, decoder, model validation, and finite-performance evidence for deployment claims."
+    },
+    {
+      "id": "fact-rate-and-redundancy",
+      "claim": "A binary block code mapping k message bits to n transmitted bits has rate k/n; redundancy restricts the valid transmitted strings but does not itself remove physical noise or determine minimum distance.",
+      "status": "verified",
+      "evidenceSourceIds": [
+        "wikipedia-error-correction-code",
+        "wikipedia-hamming-code"
+      ],
+      "usedIn": [
+        "concepts/reliable-codes.md",
+        "study-guide/reliable-codes.md",
+        "slides/reliable-codes.md",
+        "practice/reliable-codes.md"
+      ],
+      "note": "The (7,4) example gives rate 4/7, redundancy fraction 3/7, and expansion factor 7/4; those values are kept separate from correction capability."
+    },
+    {
+      "id": "fact-minimum-distance",
+      "claim": "Under a hard-decision symbol-error model, minimum distance d_min guarantees detection of up to d_min-1 errors and correction of up to floor((d_min-1)/2) errors with an appropriate bounded-distance decoder.",
+      "status": "verified",
+      "evidenceSourceIds": [
+        "wikipedia-error-correction-code",
+        "wikipedia-hamming-code"
+      ],
+      "usedIn": [
+        "study-guide/reliable-codes.md",
+        "slides/reliable-codes.md",
+        "assessment-support/reliable-codes.md",
+        "practice/reliable-codes.md"
+      ],
+      "note": "The package explicitly distinguishes worst-case distance guarantees from average error probabilities and does not promise success outside the stated radius."
+    },
+    {
+      "id": "fact-parity-limit",
+      "claim": "A single even-parity check detects every odd number of bit flips but can miss an even number, so a passed check means only that this check detected no violation.",
+      "status": "verified",
+      "evidenceSourceIds": [
+        "wikipedia-error-correction-code"
+      ],
+      "usedIn": [
+        "study-guide/reliable-codes.md",
+        "slides/reliable-codes.md",
+        "practice/reliable-codes.md"
+      ],
+      "note": "All learner-facing claims preserve the distinction between no detected error and no error."
+    },
+    {
+      "id": "fact-hamming-syndrome",
+      "claim": "A standard binary Hamming (7,4) code has minimum distance 3 and supports guaranteed single-error correction; under the package's explicit parity-check convention, flipping position 4 of 0110011 yields received word 0111011 and syndrome 100.",
+      "status": "verified",
+      "evidenceSourceIds": [
+        "wikipedia-hamming-code",
+        "wikipedia-error-correction-code"
+      ],
+      "usedIn": [
+        "study-guide/reliable-codes.md",
+        "slides/reliable-codes.md",
+        "practice/reliable-codes.md"
+      ],
+      "note": "The three displayed XOR checks were recalculated: 0110011 satisfies all checks, and only the position-4 check changes after the stated flip. Syndrome bit order is explicitly declared."
+    },
+    {
+      "id": "fact-extended-hamming-and-interleaving",
+      "claim": "Adding an overall parity bit can give an extended Hamming code minimum distance 4 for common SECDED use; this does not guarantee correction of every double error, and interleaving only rearranges a burst into separated errors for another code to handle.",
+      "status": "verified",
+      "evidenceSourceIds": [
+        "wikipedia-hamming-code",
+        "wikipedia-error-correction-code"
+      ],
+      "usedIn": [
+        "concepts/reliable-codes.md",
+        "study-guide/reliable-codes.md",
+        "slides/reliable-codes.md",
+        "assessment-support/reliable-codes.md",
+        "practice/reliable-codes.md"
+      ],
+      "note": "The chapter consistently separates detection, correction, erasure, retransmission, and interleaving and avoids treating any one technique as universal reliability."
+    }
+  ]
+}

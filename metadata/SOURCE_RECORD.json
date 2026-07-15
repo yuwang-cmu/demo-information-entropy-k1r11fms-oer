@@ -1,0 +1,250 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "sourceId": "wikipedia-channel-capacity",
+      "comparisonMode": "automatic",
+      "canonicalUrl": "https://en.wikipedia.org/wiki/Channel_capacity",
+      "retrievedAt": "2026-07-14T16:07:37.704Z",
+      "extractor": {
+        "tool": "wikipedia-action-api",
+        "version": "v0.11.0",
+        "schemaVersion": 1,
+        "sourceFormat": "mediawiki-json-extract"
+      },
+      "originalSha256": "74dee0a403ea6c42a5d991e2e6c0d49398265ad0bc980735f1493eef02c16db2",
+      "textSha256": "e4337af6525c01297e6b554f7da5638a90de4958d4194affe875282b2e21a74f",
+      "wordCount": 2974,
+      "retrieval": {
+        "captureMode": "network",
+        "apiEndpoint": "https://en.wikipedia.org/w/api.php",
+        "requestedUrl": "https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&prop=extracts%7Crevisions&explaintext=1&rvprop=ids%7Ctimestamp&redirects=1&titles=Channel+capacity&maxlag=5",
+        "finalUrl": "https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&prop=extracts%7Crevisions&explaintext=1&rvprop=ids%7Ctimestamp&redirects=1&titles=Channel+capacity&maxlag=5",
+        "httpStatus": 200,
+        "contentType": "application/json; charset=utf-8",
+        "retrievedAt": "2026-07-14T16:07:37.704Z",
+        "byteLength": 46984,
+        "tool": {
+          "name": "coursewerk",
+          "version": "v0.11.0"
+        },
+        "pageId": 231204,
+        "revisionId": 1322294953,
+        "revisionTimestamp": "2025-11-15T12:42:34Z",
+        "title": "Channel capacity",
+        "resolvedUrl": "https://en.wikipedia.org/wiki/Channel_capacity",
+        "permanentUrl": "https://en.wikipedia.org/w/index.php?title=Channel_capacity&oldid=1322294953"
+      }
+    },
+    {
+      "sourceId": "wikipedia-entropy-information-theory",
+      "comparisonMode": "automatic",
+      "canonicalUrl": "https://en.wikipedia.org/wiki/Entropy_(information_theory)",
+      "retrievedAt": "2026-07-14T16:07:36.481Z",
+      "extractor": {
+        "tool": "wikipedia-action-api",
+        "version": "v0.11.0",
+        "schemaVersion": 1,
+        "sourceFormat": "mediawiki-json-extract"
+      },
+      "originalSha256": "8800160ffb33e758cd3e5d047a394ef0a9db04703ae268a0d418fb977a2be609",
+      "textSha256": "68abf2e35d6c2f49a0f601ecc391817e5aa0ccab68b00393614f630c7e9087a9",
+      "wordCount": 8739,
+      "retrieval": {
+        "captureMode": "network",
+        "apiEndpoint": "https://en.wikipedia.org/w/api.php",
+        "requestedUrl": "https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&prop=extracts%7Crevisions&explaintext=1&rvprop=ids%7Ctimestamp&redirects=1&titles=Entropy+%28information+theory%29&maxlag=5",
+        "finalUrl": "https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&prop=extracts%7Crevisions&explaintext=1&rvprop=ids%7Ctimestamp&redirects=1&titles=Entropy+%28information+theory%29&maxlag=5",
+        "httpStatus": 200,
+        "contentType": "application/json; charset=utf-8",
+        "retrievedAt": "2026-07-14T16:07:36.481Z",
+        "byteLength": 103615,
+        "tool": {
+          "name": "coursewerk",
+          "version": "v0.11.0"
+        },
+        "pageId": 15445,
+        "revisionId": 1360595480,
+        "revisionTimestamp": "2026-06-22T13:37:23Z",
+        "title": "Entropy (information theory)",
+        "resolvedUrl": "https://en.wikipedia.org/wiki/Entropy_(information_theory)",
+        "permanentUrl": "https://en.wikipedia.org/w/index.php?title=Entropy_(information_theory)&oldid=1360595480"
+      }
+    },
+    {
+      "sourceId": "wikipedia-error-correction-code",
+      "comparisonMode": "automatic",
+      "canonicalUrl": "https://en.wikipedia.org/wiki/Error_correction_code",
+      "retrievedAt": "2026-07-14T16:07:38.631Z",
+      "extractor": {
+        "tool": "wikipedia-action-api",
+        "version": "v0.11.0",
+        "schemaVersion": 1,
+        "sourceFormat": "mediawiki-json-extract"
+      },
+      "originalSha256": "594c30f6e1233675a407bd46bbf7a93c6e5d7a0584c21e9f79464bfc4b2578f0",
+      "textSha256": "ec8b3d8ad9fbf43ddf8131031f6eaa9ac1e43e945b468a5633ecef3e43826bae",
+      "wordCount": 3979,
+      "retrieval": {
+        "captureMode": "network",
+        "apiEndpoint": "https://en.wikipedia.org/w/api.php",
+        "requestedUrl": "https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&prop=extracts%7Crevisions&explaintext=1&rvprop=ids%7Ctimestamp&redirects=1&titles=Error+correction+code&maxlag=5",
+        "finalUrl": "https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&prop=extracts%7Crevisions&explaintext=1&rvprop=ids%7Ctimestamp&redirects=1&titles=Error+correction+code&maxlag=5",
+        "httpStatus": 200,
+        "contentType": "application/json; charset=utf-8",
+        "retrievedAt": "2026-07-14T16:07:38.631Z",
+        "byteLength": 31736,
+        "tool": {
+          "name": "coursewerk",
+          "version": "v0.11.0"
+        },
+        "pageId": 4237207,
+        "revisionId": 1362628481,
+        "revisionTimestamp": "2026-07-05T06:37:43Z",
+        "title": "Error correction code",
+        "resolvedUrl": "https://en.wikipedia.org/wiki/Error_correction_code",
+        "permanentUrl": "https://en.wikipedia.org/w/index.php?title=Error_correction_code&oldid=1362628481"
+      }
+    },
+    {
+      "sourceId": "wikipedia-hamming-code",
+      "comparisonMode": "automatic",
+      "canonicalUrl": "https://en.wikipedia.org/wiki/Hamming_code",
+      "retrievedAt": "2026-07-14T16:07:39.099Z",
+      "extractor": {
+        "tool": "wikipedia-action-api",
+        "version": "v0.11.0",
+        "schemaVersion": 1,
+        "sourceFormat": "mediawiki-json-extract"
+      },
+      "originalSha256": "12e98b63cffb4d4baa334ffddfded29ca52a304f229969e024ca68db147e3093",
+      "textSha256": "911d67d8fe8201df93a24c0ec3c52298f89728ef30533acc66ccdf3fa95f4e81",
+      "wordCount": 3877,
+      "retrieval": {
+        "captureMode": "network",
+        "apiEndpoint": "https://en.wikipedia.org/w/api.php",
+        "requestedUrl": "https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&prop=extracts%7Crevisions&explaintext=1&rvprop=ids%7Ctimestamp&redirects=1&titles=Hamming+code&maxlag=5",
+        "finalUrl": "https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&prop=extracts%7Crevisions&explaintext=1&rvprop=ids%7Ctimestamp&redirects=1&titles=Hamming+code&maxlag=5",
+        "httpStatus": 200,
+        "contentType": "application/json; charset=utf-8",
+        "retrievedAt": "2026-07-14T16:07:39.099Z",
+        "byteLength": 42082,
+        "tool": {
+          "name": "coursewerk",
+          "version": "v0.11.0"
+        },
+        "pageId": 41226,
+        "revisionId": 1362915467,
+        "revisionTimestamp": "2026-07-07T00:03:53Z",
+        "title": "Hamming code",
+        "resolvedUrl": "https://en.wikipedia.org/wiki/Hamming_code",
+        "permanentUrl": "https://en.wikipedia.org/w/index.php?title=Hamming_code&oldid=1362915467"
+      }
+    },
+    {
+      "sourceId": "wikipedia-information-theory",
+      "comparisonMode": "automatic",
+      "canonicalUrl": "https://en.wikipedia.org/wiki/Information_theory",
+      "retrievedAt": "2026-07-14T16:07:35.561Z",
+      "extractor": {
+        "tool": "wikipedia-action-api",
+        "version": "v0.11.0",
+        "schemaVersion": 1,
+        "sourceFormat": "mediawiki-json-extract"
+      },
+      "originalSha256": "c522b7e4a9fb0ed38fd107110d489951dc96d24f475acab3e904f5b8f0a17727",
+      "textSha256": "21bd7aaa21a91e092d39b6d533a2b2379c146af1dc897a2fff15b3c840dc99d5",
+      "wordCount": 5929,
+      "retrieval": {
+        "captureMode": "network",
+        "apiEndpoint": "https://en.wikipedia.org/w/api.php",
+        "requestedUrl": "https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&prop=extracts%7Crevisions&explaintext=1&rvprop=ids%7Ctimestamp&redirects=1&titles=Information+theory&maxlag=5",
+        "finalUrl": "https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&prop=extracts%7Crevisions&explaintext=1&rvprop=ids%7Ctimestamp&redirects=1&titles=Information+theory&maxlag=5",
+        "httpStatus": 200,
+        "contentType": "application/json; charset=utf-8",
+        "retrievedAt": "2026-07-14T16:07:35.561Z",
+        "byteLength": 61225,
+        "tool": {
+          "name": "coursewerk",
+          "version": "v0.11.0"
+        },
+        "pageId": 14773,
+        "revisionId": 1360867049,
+        "revisionTimestamp": "2026-06-24T03:15:08Z",
+        "title": "Information theory",
+        "resolvedUrl": "https://en.wikipedia.org/wiki/Information_theory",
+        "permanentUrl": "https://en.wikipedia.org/w/index.php?title=Information_theory&oldid=1360867049"
+      }
+    },
+    {
+      "sourceId": "wikipedia-mutual-information",
+      "comparisonMode": "automatic",
+      "canonicalUrl": "https://en.wikipedia.org/wiki/Mutual_information",
+      "retrievedAt": "2026-07-14T16:07:37.011Z",
+      "extractor": {
+        "tool": "wikipedia-action-api",
+        "version": "v0.11.0",
+        "schemaVersion": 1,
+        "sourceFormat": "mediawiki-json-extract"
+      },
+      "originalSha256": "40904f11212aa0fc56e7a589b62cfed6e4fe107fcbf0f7e1998f93f1a745672a",
+      "textSha256": "be285f7229776fe8249c1e802c94bf757eb204fdbdea4f7eff6d8c40ca7801b7",
+      "wordCount": 7694,
+      "retrieval": {
+        "captureMode": "network",
+        "apiEndpoint": "https://en.wikipedia.org/w/api.php",
+        "requestedUrl": "https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&prop=extracts%7Crevisions&explaintext=1&rvprop=ids%7Ctimestamp&redirects=1&titles=Mutual+information&maxlag=5",
+        "finalUrl": "https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&prop=extracts%7Crevisions&explaintext=1&rvprop=ids%7Ctimestamp&redirects=1&titles=Mutual+information&maxlag=5",
+        "httpStatus": 200,
+        "contentType": "application/json; charset=utf-8",
+        "retrievedAt": "2026-07-14T16:07:37.011Z",
+        "byteLength": 132587,
+        "tool": {
+          "name": "coursewerk",
+          "version": "v0.11.0"
+        },
+        "pageId": 427282,
+        "revisionId": 1362006248,
+        "revisionTimestamp": "2026-07-01T10:59:29Z",
+        "title": "Mutual information",
+        "resolvedUrl": "https://en.wikipedia.org/wiki/Mutual_information",
+        "permanentUrl": "https://en.wikipedia.org/w/index.php?title=Mutual_information&oldid=1362006248"
+      }
+    },
+    {
+      "sourceId": "wikipedia-noisy-channel-coding-theorem",
+      "comparisonMode": "automatic",
+      "canonicalUrl": "https://en.wikipedia.org/wiki/Noisy-channel_coding_theorem",
+      "retrievedAt": "2026-07-14T16:07:38.188Z",
+      "extractor": {
+        "tool": "wikipedia-action-api",
+        "version": "v0.11.0",
+        "schemaVersion": 1,
+        "sourceFormat": "mediawiki-json-extract"
+      },
+      "originalSha256": "862f5540b19955817d2f033afb650bc28644fea5f5d77dc1be5c8f384feac43c",
+      "textSha256": "60e79c5410c2cdbdcfab8720b697634368c621b2b89b3aa2eafc2bcaebf49eaa",
+      "wordCount": 2726,
+      "retrieval": {
+        "captureMode": "network",
+        "apiEndpoint": "https://en.wikipedia.org/w/api.php",
+        "requestedUrl": "https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&prop=extracts%7Crevisions&explaintext=1&rvprop=ids%7Ctimestamp&redirects=1&titles=Noisy-channel+coding+theorem&maxlag=5",
+        "finalUrl": "https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&prop=extracts%7Crevisions&explaintext=1&rvprop=ids%7Ctimestamp&redirects=1&titles=Noisy-channel+coding+theorem&maxlag=5",
+        "httpStatus": 200,
+        "contentType": "application/json; charset=utf-8",
+        "retrievedAt": "2026-07-14T16:07:38.188Z",
+        "byteLength": 37860,
+        "tool": {
+          "name": "coursewerk",
+          "version": "v0.11.0"
+        },
+        "pageId": 3474289,
+        "revisionId": 1351076281,
+        "revisionTimestamp": "2026-04-25T20:15:55Z",
+        "title": "Noisy-channel coding theorem",
+        "resolvedUrl": "https://en.wikipedia.org/wiki/Noisy-channel_coding_theorem",
+        "permanentUrl": "https://en.wikipedia.org/w/index.php?title=Noisy-channel_coding_theorem&oldid=1351076281"
+      }
+    }
+  ]
+}

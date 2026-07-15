@@ -1,14 +1,27 @@
 {
   "schemaVersion": 2,
   "packageId": "pkg-demo-information-entropy-k1r11fms",
-  "title": "(Demo) Information Entropy",
-  "description": "",
-  "keywords": [],
-  "discipline": "chemistry",
-  "courseContext": {},
+  "title": "Information Through Noise: Uncertainty, Capacity, and Reliable Codes",
+  "description": "This is a demonstration course that shows what Coursewerk can produce; it is not a course package intended for direct use in real teaching. This two-chapter introductory information-science demo begins by turning uncertainty into a measurable quantity: bits, entropy, conditional entropy, mutual information, noisy channels, and capacity. It then asks how real messages survive corruption, using redundancy, Hamming distance, parity checks, block codes, interleaving, and layered validation to explain error detection and correction without implying perfect reliability. Each chapter includes a concept map, accessible study guide, visual slide deck, assessment-design guide, and worked practice set. The package is generated automatically by an AI agent following Coursewerk from revision-pinned Wikipedia pages and retained rights evidence, without human-authored lesson content or subject-matter editing; human involvement is limited to commissioning, pipeline audit, visual review, and publication oversight.",
+  "keywords": [
+    "information theory",
+    "entropy",
+    "mutual information",
+    "channel capacity",
+    "noise",
+    "error correction",
+    "Hamming distance",
+    "coding theory"
+  ],
+  "discipline": "Information science, mathematics, and communications",
+  "courseContext": {
+    "courseName": "Introduction to Information and Communication",
+    "level": "introductory undergraduate",
+    "instructor": "Yu Wang (demo curator)",
+    "courseNumber": "Unassigned",
+    "department": "Interdisciplinary STEM"
+  },
   "license": "CC-BY-SA-4.0",
-  "unitTerm": "module",
-  "createdAt": "2026-07-15T00:26:10.942Z",
   "publicRepo": {
     "owner": "yuwang-cmu",
     "name": "demo-information-entropy-k1r11fms-oer"
@@ -16,5 +29,17 @@
   "privateRepo": {
     "owner": "yuwang-cmu",
     "name": "demo-information-entropy-k1r11fms-private"
-  }
+  },
+  "chapters": [
+    {
+      "slug": "measuring-information",
+      "title": "Measuring Information: Surprise, Entropy, and Channel Capacity"
+    },
+    {
+      "slug": "reliable-codes",
+      "title": "Reliable Codes: Redundancy, Distance, and Error Correction"
+    }
+  ],
+  "unitTerm": "chapter",
+  "createdAt": "2026-07-15T00:00:00Z"
 }

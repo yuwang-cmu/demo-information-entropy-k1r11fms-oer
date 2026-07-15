@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "customRendererTheme": false,
+  "builtInThemes": {
+    "mdhtml": "beige-decent-2",
+    "slides": "architect"
+  },
+  "courseVisualIdentity": {
+    "name": "Signal Ledger",
+    "palette": {
+      "ink": "#17233c",
+      "signalAmber": "#e8a23a",
+      "channelTeal": "#2c8c87",
+      "errorCoral": "#d95d5d",
+      "paper": "#f3ead7"
+    },
+    "application": "Original diagrams use grid paper, signal traces, bit cells, and annotated decoding marks; text carriers use only registered orz built-in themes for reproducible Alembic rendering."
+  }
+}

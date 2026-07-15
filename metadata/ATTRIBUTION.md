@@ -1,0 +1,14 @@
+# Attribution
+
+Generated from `metadata/PROVENANCE.json`; do not edit independently.
+
+| Asset | Title | Creator | Source | License/status | Attribution | Used in |
+|---|---|---|---|---|---|---|
+| `assets/capacity-boundary.svg` | Capacity as an asymptotic boundary on reliable rate | Yu Wang | — | CC BY-SA 4.0 | Original accessible SVG diagram by Yu Wang for this AI-assisted Coursewerk package; qualitative theorem map, not empirical data. | study-guide/measuring-information.md, slides/measuring-information.md |
+| `assets/golden-record.jpg` | Voyager Golden Record during production | NASA/JPL | [source](https://commons.wikimedia.org/wiki/File:The-golden-record_30269492703_o.jpg) | Public domain | NASA/JPL, Voyager Golden Record during production, circa 1977, via Wikimedia Commons; U.S. federal government work, public domain; used without modification. | study-guide/reliable-codes.md, slides/reliable-codes.md |
+| `assets/goldstone-antenna.jpg` | Goldstone Deep Space Network 70-metre antenna | NASA/JPL | [source](https://commons.wikimedia.org/wiki/File:Goldstone_DSN_antenna.jpg) | Public domain | NASA/JPL, 70-metre antenna at Goldstone Deep Space Communications Complex, via Wikimedia Commons; U.S. federal government work, public domain; used without modification. | study-guide/measuring-information.md, slides/measuring-information.md |
+| `assets/hamming-space.svg` | Codeword separation in Hamming space | Yu Wang | — | CC BY-SA 4.0 | Original accessible SVG diagram by Yu Wang for this AI-assisted Coursewerk package; schematic codeword neighborhoods. | study-guide/reliable-codes.md, slides/reliable-codes.md |
+| `assets/mutual-information.svg` | Entropy bookkeeping for mutual information | Yu Wang | — | CC BY-SA 4.0 | Original accessible SVG diagram by Yu Wang for this AI-assisted Coursewerk package; conceptual bookkeeping for discrete Shannon entropy. | study-guide/measuring-information.md, slides/measuring-information.md |
+| `assets/noisy-channel.svg` | A channel as a conditional probability rule | Yu Wang | — | CC BY-SA 4.0 | Original accessible SVG diagram by Yu Wang for this AI-assisted Coursewerk package; binary channel is a schematic model. | study-guide/measuring-information.md, slides/measuring-information.md |
+| `assets/surprise-entropy.svg` | From outcome probability to surprise and entropy | Yu Wang | — | CC BY-SA 4.0 | Original accessible SVG diagram by Yu Wang for this AI-assisted Coursewerk package; probabilities and values are illustrative. | study-guide/measuring-information.md, slides/measuring-information.md |
+| `assets/syndrome-decoding.svg` | Syndrome-guided single-bit correction workflow | Yu Wang | — | CC BY-SA 4.0 | Original accessible SVG diagram by Yu Wang for this AI-assisted Coursewerk package; conceptual workflow rather than a complete decoder implementation. | study-guide/reliable-codes.md, slides/reliable-codes.md |

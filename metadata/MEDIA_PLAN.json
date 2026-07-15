@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "chapters": {
+    "measuring-information": {
+      "realImageDecision": "used",
+      "rationale": "A NASA Deep Space Network antenna photograph grounds abstract channel models in a physical system that must recover weak signals across enormous distances.",
+      "reviewedBy": "Coursewerk Demo Builder",
+      "reviewedAt": "2026-07-15"
+    },
+    "reliable-codes": {
+      "realImageDecision": "used",
+      "rationale": "A NASA/JPL photograph of a Voyager Golden Record connects durable encoding and decoding conventions to a physical message designed for uncertain reception.",
+      "reviewedBy": "Coursewerk Demo Builder",
+      "reviewedAt": "2026-07-15"
+    }
+  }
+}
